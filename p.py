@@ -59,13 +59,13 @@ def cost_function(tags):
 	return float(a),True
 
 def linear_opt(ind):
-	sol_tags = [[] for i in test_data]
+	sol_tags = [[all_tags[1]] for i in test_data]
 	while ind<m:
 		print('ind',ind)
 		for i,x in enumerate(all_tags):
 			sol_tags[ind] = [x]
 			cost,status=cost_function(sol_tags)
-			if status:
+			if not status:
 				return ind
 			print >> open("tmp/output.txt", "a"), ind,i,cost
 		sol_tags[ind] = []
@@ -101,23 +101,48 @@ def master_loop():
 # submission[0]=['full-time-job']
 # create_submission(submission)
 
+print(test_data[1])
 
 def mlpredict(s):
 	from model import learn
-	print("testing logestic regression")
-	descriptions = []
+	descriptions,test_descriptions = [],[]
 	labels = []
 	for i,x in enumerate(train_data):
 		descriptions.append(x[1])
-		labels.append( [(1 if i in x[0].split(' ') else 0) for i in all_tags])
+		y_labels = [(1 if i in x[0].split(' ') else 0) for i in all_tags]
+		y_converted = [0]*6
+		if y_labels[0]==1 or y_labels[1]==1:
+			y_converted[0]=1+y_labels[:2].index(1)
+		if y_labels[2]==1 or y_labels[3]==1:
+			y_converted[1]=1+y_labels[2:4].index(1)
+		if y_labels[4]==1 or y_labels[5]==1 or y_labels[6]==1:
+			y_converted[2]=1+y_labels[4:7].index(1)
+		if y_labels[7]==1 :
+			y_converted[3]=1
+		if y_labels[8]==1 or y_labels[9]==1 or y_labels[10]==1 :
+			y_converted[3]=1
+		labels.append(y_converted)
 
-	descriptions, test_descriptions = descriptions[:int(n*s)],descriptions[int(n*s):]
-	labels, test_labels = labels[:int(n*s)],labels[int(n*s):]
+	# descriptions, test_descriptions = descriptions[:int(n*s)],descriptions[int(n*s):]
+	# labels, test_labels = labels[:int(n*s)],labels[int(n*s):]
 
-	learn(np.array(descriptions),np.array(labels),np.array(test_descriptions),np.array(test_labels))
+	for i,x in enumerate(test_data):
+		test_descriptions.append(x[0])
+
+	predictions = learn(np.array(descriptions),np.array(labels),np.array(test_descriptions),np.array([]))
+
+	submission = [[] for i in test_data]
+	for i,x in enumerate(predictions):
+		res_labels = []
+		for j,y in enumerate(x):
+			if y==1:
+				res_labels.append(all_tags[j])
+		submission[i]=res_labels
+
+	create_submission(submission)
 
 print("testing logestic regression")
-mlpredict(0.9)
+mlpredict(1)
 
 
 

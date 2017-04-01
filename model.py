@@ -44,6 +44,7 @@ def learn(descriptions,labels,test_descriptions,test_labels):
   train_vectors = vectorizer.fit_transform(descriptions)
   test_vectors = vectorizer.transform(test_descriptions)
 
+  print(labels[:10])
   logreg = linear_model.LogisticRegression()
   multi_target_clf = MultiOutputClassifier(logreg, n_jobs=-1)
   multi_target_clf.fit(train_vectors, labels)
