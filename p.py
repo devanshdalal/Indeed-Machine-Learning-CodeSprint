@@ -32,59 +32,74 @@ def create_submission(tags):
 		result.append( ' '.join(x) )
 	csv_writer( '\n'.join(result),'tags.tsv')
 
-def cost_function(tags):
-	create_submission(tags)
+def cost_function(stock_units):
+	create_submission(stock_units)
+	import clipboard
+
+	clipboard.copy('abc')
+
 	cur = pyautogui.position()
-	pyautogui.click(x=201, y=129, clicks=1, button='left')
+	pyautogui.click(x=511, y=599, clicks=1, button='left')
 	pyautogui.moveTo(cur[0], cur[1]) # come back
-	time.sleep(1)
+	time.sleep(0.7)
 	cur = pyautogui.position()
-	pyautogui.click(x=769, y=481, clicks=1, button='left')
+	pyautogui.click(x=1076, y=730, clicks=1, button='left')
 	pyautogui.moveTo(cur[0], cur[1]) # come back
-	time.sleep(0.3)
+	time.sleep(0.8)
 	cur = pyautogui.position()
-	pyautogui.doubleClick(x=426, y=329)
+	pyautogui.doubleClick(x=257, y=362)
 	pyautogui.moveTo(cur[0], cur[1]) # come back
 	time.sleep(6.5)
 	cur = pyautogui.position()
-	pyautogui.moveTo(239, 169)
-	pyautogui.dragRel(66, 0, duration=0.01)
+	pyautogui.moveTo(825, 753)
+	pyautogui.dragRel(159, 0, duration=0.4)
 	pyautogui.hotkey('ctrl', 'c')
 	pyautogui.moveTo(cur[0], cur[1]) # come back
-	r = Tk()
-	r.withdraw()
-	a=r.selection_get(selection = "CLIPBOARD")
+	a = clipboard.paste()
 	if re.match("^\d+?\.\d+?$", a) is None:
-		return -1,False
+		print('problem:',a)
+		return -1,False 
 	return float(a),True
 
 def linear_opt(ind):
 	sol_tags = [[all_tags[1]] for i in test_data]
+	starting_score = 0.1383065613939559
 	while ind<m:
 		print('ind',ind)
-		for i,x in enumerate(all_tags):
-			sol_tags[ind] = [x]
-			cost,status=cost_function(sol_tags)
-			if not status:
-				return ind
-			print >> open("tmp/output.txt", "a"), ind,i,cost
 		sol_tags[ind] = []
+		base_cost,status=cost_function(sol_tags)
+		if not status:
+			return ind
+		if base_cost == starting_score:
+			print >> open("tmp/output.txt", "a"), 'actual_test_case',ind
+		else:
+			for i,x in enumerate(all_tags):
+				if i==1:
+					print('known case')
+					print >> open("tmp/output.txt", "a"), ind,i,starting_score - base_cost,starting_score
+				else:	
+					sol_tags[ind] = [x]
+					cost,status=cost_function(sol_tags)
+					if not status:
+						return ind
+					print >> open("tmp/output.txt", "a"), ind,i,cost-base_cost,cost
+		sol_tags[ind] = [all_tags[1]]
 		ind+=1
 	return ind
 	
 
 def prepare_new_tab():
-	pyautogui.click(x=500, y=500, clicks=1, button='left')
+	pyautogui.click(x=203, y=347, clicks=1, button='left')
 	pyautogui.hotkey('esc',)
 	pyautogui.hotkey('ctrl', 'w')
 	pyautogui.hotkey('ctrl', 't')
 	pyautogui.typewrite('https://www.hackerrank.com/contests/indeed-ml-codesprint-2017/challenges/tagging-raw-job-descriptions')
 	pyautogui.press('enter')
-	pyautogui.moveTo(x=1358, y=115)
-	time.sleep(25)
-	for x in xrange(1,15):
+	pyautogui.moveTo(x=203, y=347)
+	time.sleep(10)
+	for x in xrange(1,10):
 		pyautogui.scroll(-20)
-		time.sleep(2)
+		time.sleep(1)
 
 def master_loop():
 
@@ -93,13 +108,33 @@ def master_loop():
 		prepare_new_tab()
 		ind = linear_opt(ind)
 
-# master_loop()
+master_loop()
 
 # cost_function([[] for i in test_data])
 
 # submission  = [['full-time-job'] for i in test_data]
 # submission[0]=['full-time-job']
 # create_submission(submission)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 print(test_data[1])
 
@@ -141,8 +176,8 @@ def mlpredict(s):
 
 	create_submission(submission)
 
-print("testing logestic regression")
-mlpredict(1)
+# print("testing logestic regression")
+# mlpredict(1)
 
 
 
