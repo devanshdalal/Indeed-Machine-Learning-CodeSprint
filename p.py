@@ -32,6 +32,19 @@ def create_submission(tags):
 		result.append( ' '.join(x) )
 	csv_writer( '\n'.join(result),'tags.tsv')
 
+def group(ind):
+	if ind==0 or ind==1:
+		return 0
+	elif ind==2 or ind==3:
+		return 1
+	elif ind==4 or ind==5 or ind==6 or ind==7:
+		return 2
+	elif ind==8 or ind==9 or ind==10:
+		return 3
+	elif ind==11:
+		return 4
+
+
 def cost_function(stock_units):
 	create_submission(stock_units)
 	import clipboard
@@ -49,22 +62,28 @@ def cost_function(stock_units):
 	cur = pyautogui.position()
 	pyautogui.doubleClick(x=257, y=362)
 	pyautogui.moveTo(cur[0], cur[1]) # come back
-	time.sleep(6.5)
-	cur = pyautogui.position()
-	pyautogui.moveTo(825, 753)
-	pyautogui.dragRel(159, 0, duration=0.4)
-	pyautogui.hotkey('ctrl', 'c')
-	pyautogui.moveTo(cur[0], cur[1]) # come back
-	a = clipboard.paste()
-	if re.match("^\d+?\.\d+?$", a) is None:
-		print('problem:',a)
-		return -1,False 
+	time.sleep(6)
+	patience = 0
+	while True:
+		cur = pyautogui.position()
+		pyautogui.doubleClick(907, 754)
+		pyautogui.hotkey('ctrl', 'c')
+		pyautogui.moveTo(cur[0], cur[1]) # come back
+		a = clipboard.paste()
+		if re.match("^\d+?\.\d+?$", a) is None:
+			if(patience==1):
+				print('problem:',a)
+				return -1,False 
+		else:
+			break
+		patience+=1
+		time.sleep(8)
 	return float(a),True
 
-def linear_opt(ind):
+def linear_opt(ind,end):
 	sol_tags = [[all_tags[1]] for i in test_data]
 	starting_score = 0.1383065613939559
-	while ind<m:
+	while ind<end:
 		print('ind',ind)
 		sol_tags[ind] = []
 		base_cost,status=cost_function(sol_tags)
@@ -73,16 +92,24 @@ def linear_opt(ind):
 		if base_cost == starting_score:
 			print >> open("tmp/output.txt", "a"), 'actual_test_case',ind
 		else:
+			group_done = [False]*5
 			for i,x in enumerate(all_tags):
+				group_id = group(i)
+				if group_done[group_id]:
+					continue
 				if i==1:
-					print('known case')
 					print >> open("tmp/output.txt", "a"), ind,i,starting_score - base_cost,starting_score
+					if starting_score - base_cost>0:
+						group_done[group_id]=True
 				else:	
 					sol_tags[ind] = [x]
 					cost,status=cost_function(sol_tags)
 					if not status:
 						return ind
 					print >> open("tmp/output.txt", "a"), ind,i,cost-base_cost,cost
+					if cost-base_cost>0:
+						group_done[group_id]=True
+
 		sol_tags[ind] = [all_tags[1]]
 		ind+=1
 	return ind
@@ -101,14 +128,14 @@ def prepare_new_tab():
 		pyautogui.scroll(-20)
 		time.sleep(1)
 
-def master_loop():
+def master_loop(rng):
 
-	ind = 0
-	while ind!=m:
+	ind = rng[0]
+	while ind!=rng[1]:
 		prepare_new_tab()
-		ind = linear_opt(ind)
+		ind = linear_opt(ind,rng[1])
 
-master_loop()
+master_loop((283,1000))
 
 # cost_function([[] for i in test_data])
 
