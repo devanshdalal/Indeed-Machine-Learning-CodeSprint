@@ -71,14 +71,21 @@ def cost_function(stock_units):
 		pyautogui.moveTo(cur[0], cur[1]) # come back
 		a = clipboard.paste()
 		if re.match("^\d+?\.\d+?$", a) is None:
-			if(patience==1):
+			if(patience==5):
 				print('problem:',a)
 				return -1,False 
 		else:
 			break
 		patience+=1
-		time.sleep(8)
+		time.sleep(2.2)
 	return float(a),True
+
+def cost_available(ind,i):
+	temp = map(lambda y:y.split(),open('tmp/output.txt','rt').readlines())
+	temp = filter( lambda y: y[:2]==[str(ind),str(i)],temp)
+	return list(map(lambda z:float(z[2]),temp))
+
+
 
 def linear_opt(ind,end):
 	sol_tags = [[all_tags[1]] for i in test_data]
@@ -102,11 +109,15 @@ def linear_opt(ind,end):
 					if starting_score - base_cost>0:
 						group_done[group_id]=True
 				else:	
-					sol_tags[ind] = [x]
-					cost,status=cost_function(sol_tags)
-					if not status:
-						return ind
-					print >> open("tmp/output.txt", "a"), ind,i,cost-base_cost,cost
+					fc,cost = cost_available(ind,i),-1
+					if len(fc)==0:
+						sol_tags[ind] = [x]
+						cost,status=cost_function(sol_tags)
+						if not status:
+							return ind
+						print >> open("tmp/output.txt", "a"), ind,i,cost-base_cost,cost
+					else:
+						cost=fc[0]
 					if cost-base_cost>0:
 						group_done[group_id]=True
 
@@ -124,18 +135,19 @@ def prepare_new_tab():
 	pyautogui.press('enter')
 	pyautogui.moveTo(x=203, y=347)
 	time.sleep(10)
-	for x in xrange(1,10):
+	for x in xrange(1,20):
 		pyautogui.scroll(-20)
 		time.sleep(1)
 
 def master_loop(rng):
+	pyautogui.FAILSAFE = False
 
 	ind = rng[0]
 	while ind!=rng[1]:
 		prepare_new_tab()
 		ind = linear_opt(ind,rng[1])
 
-master_loop((283,1000))
+master_loop((397,1000))
 
 # cost_function([[] for i in test_data])
 
