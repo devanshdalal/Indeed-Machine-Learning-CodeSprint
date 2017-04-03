@@ -147,7 +147,7 @@ def master_loop(rng):
 		prepare_new_tab()
 		ind = linear_opt(ind,rng[1])
 
-master_loop((397,1000))
+# master_loop((889,1000))
 
 # cost_function([[] for i in test_data])
 
@@ -166,7 +166,21 @@ master_loop((397,1000))
 
 
 
+def rule_based_model():
+	from model import text_extract
+	labels = []
+	descriptions = []
+	for i,x in enumerate(train_data):
+		descriptions.append(x[1])
+		labels.append(x[0].split())
 
+	text_extract(descriptions,labels)
+
+
+
+
+
+rule_based_model()
 
 
 
