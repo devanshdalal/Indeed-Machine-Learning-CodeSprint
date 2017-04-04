@@ -20,9 +20,10 @@ test_data = csv_reader('test.tsv')
 n = len(train_data)
 m = len(test_data)
 all_tags = ['part-time-job','full-time-job','hourly-wage','salary','associate-needed','bs-degree-needed','ms-or-phd-needed',
-	'licence-needed','1-year-experience-needed','2-4-years-experience-needed','5-plus-years-experience-needed','supervising-job']
+  'licence-needed','1-year-experience-needed','2-4-years-experience-needed','5-plus-years-experience-needed','supervising-job']
+all_tags_map = {'part-time-job':0,'full-time-job':0,'hourly-wage':1,'salary':1,'associate-needed':2,'bs-degree-needed':2,'ms-or-phd-needed':2,
+  'licence-needed':2,'1-year-experience-needed':3,'2-4-years-experience-needed':3,'5-plus-years-experience-needed':3,'supervising-job':4}
 n_tags = 12
-
 # print(train_data[0],len(train_data[0]))
 # print(test_data[0])
 
@@ -30,7 +31,7 @@ def create_submission(tags):
 	result = [ 'tags' ]
 	for i,x in enumerate(tags):
 		result.append( ' '.join(x) )
-	csv_writer( '\n'.join(result),'tags.tsv')
+	csv_writer( '\n'.join(result)+'\n','tags.tsv')
 
 def group(ind):
 	if ind==0 or ind==1:
@@ -156,16 +157,6 @@ def master_loop(rng):
 # create_submission(submission)
 
 
-
-
-
-
-
-
-
-
-
-
 def rule_based_model():
 	from model import text_extract
 	labels = []
@@ -174,22 +165,29 @@ def rule_based_model():
 		descriptions.append(x[1])
 		labels.append(x[0].split())
 
-	text_extract(descriptions,labels)
+
+	_ = text_extract(descriptions,labels)
+
+	test_descriptions = []
+	for i,x in enumerate(test_data):
+		test_descriptions.append(x[0])
+	
+	test_labels = text_extract(test_descriptions,[])
+	create_submission(map(lambda x: [x], test_labels))
+
+
+# rule_based_model()
+
+def get_desc_of_type(tp):
+	for i,x in enumerate(train_data):
+		if tp in x[0]:
+			print(x[1])
+
+
+# get_desc_of_type(all_tags[-1])
 
 
 
-
-
-rule_based_model()
-
-
-
-
-
-
-
-
-print(test_data[1])
 
 def mlpredict(s):
 	from model import learn
@@ -198,39 +196,46 @@ def mlpredict(s):
 	for i,x in enumerate(train_data):
 		descriptions.append(x[1])
 		y_labels = [(1 if i in x[0].split(' ') else 0) for i in all_tags]
-		y_converted = [0]*6
+		y_converted = [0]*5
 		if y_labels[0]==1 or y_labels[1]==1:
 			y_converted[0]=1+y_labels[:2].index(1)
 		if y_labels[2]==1 or y_labels[3]==1:
 			y_converted[1]=1+y_labels[2:4].index(1)
-		if y_labels[4]==1 or y_labels[5]==1 or y_labels[6]==1:
-			y_converted[2]=1+y_labels[4:7].index(1)
-		if y_labels[7]==1 :
-			y_converted[3]=1
+		if y_labels[4]==1 or y_labels[5]==1 or y_labels[6]==1 or y_labels[7]==1:
+			y_converted[2]=1+y_labels[4:8].index(1)
 		if y_labels[8]==1 or y_labels[9]==1 or y_labels[10]==1 :
-			y_converted[3]=1
+			y_converted[3]=1+y_labels[8:11].index(1)
+		if y_labels[11]==1:
+			y_converted[4]=1
 		labels.append(y_converted)
 
-	# descriptions, test_descriptions = descriptions[:int(n*s)],descriptions[int(n*s):]
-	# labels, test_labels = labels[:int(n*s)],labels[int(n*s):]
 
-	for i,x in enumerate(test_data):
-		test_descriptions.append(x[0])
-
-	predictions = learn(np.array(descriptions),np.array(labels),np.array(test_descriptions),np.array([]))
-
-	submission = [[] for i in test_data]
-	for i,x in enumerate(predictions):
-		res_labels = []
-		for j,y in enumerate(x):
-			if y==1:
-				res_labels.append(all_tags[j])
-		submission[i]=res_labels
-
-	create_submission(submission)
+	if s!=1:
+		descriptions, test_descriptions = descriptions[:int(n*s)],descriptions[int(n*s):]
+		labels, test_labels = labels[:int(n*s)],labels[int(n*s):]
+		predictions = learn(np.array(descriptions),np.array(labels),np.array(test_descriptions),np.array(test_labels))
+	else:
+		for i,x in enumerate(test_data):
+			test_descriptions.append(x[0])
+		predictions = learn(np.array(descriptions),np.array(labels),np.array(test_descriptions),np.array([]))
+		submission = [[] for i in test_data]
+		for i,x in enumerate(predictions):
+			res_labels = []
+			if x[0]>0:
+				res_labels.append(all_tags[x[0]-1])
+			if x[1]>0:
+				res_labels.append(all_tags[x[1]+1])
+			if x[2]>0:
+				res_labels.append(all_tags[x[2]+3])
+			if x[3]>0:
+				res_labels.append(all_tags[x[3]+7])
+			if x[4]>0:
+				res_labels.append(all_tags[11])
+			submission[i]=res_labels
+		create_submission(submission)
 
 # print("testing logestic regression")
-# mlpredict(1)
+mlpredict(0.9)
 
 
 
