@@ -6,6 +6,8 @@ from sklearn.feature_extraction.text import CountVectorizer,HashingVectorizer,Tf
 from sklearn import svm,linear_model,ensemble
 from sklearn.multioutput import MultiOutputClassifier
 from collections import Counter
+from nltk.stem.wordnet import WordNetLemmatizer
+WNL = WordNetLemmatizer()
 
 #assigning predictor and target variables
 
@@ -37,7 +39,7 @@ def normalize_text(desc):
   desc = re.sub(r'((https?://[^\s]+)|(www\.[^\s]+))','LINK',desc)
   # 
   desc = re.findall(r"[\w']+", desc)
-  desc = ' '.join( map(str,desc) )
+  desc = ' '.join( map( lambda x: str( WNL.lemmatize(x) ) ,desc) )
   # print(desc)
   
   print >> logfile,  desc
@@ -47,14 +49,14 @@ def add_features(desc):
   return normalize_text(desc)
 
 def score(labels,test_labels,use_list=[1]*n_tags):
-  print('using list',use_list)
+  print('using list',use_list,len(labels))
   assert(len(labels)==len(test_labels))
   stp,stn,sfp,sfn=0,0,0,0
   for i,x1 in enumerate(labels):
     x2 = test_labels[i]
     for j,y in enumerate(all_tags):
       if(use_list[j]==0):
-        continue  
+        continue
       if( y in x1 and y in x2 ):
         stp+=1
       elif(y in x1 and y not in x2):
@@ -90,7 +92,7 @@ def learn(desc,labels,test_desc,test_labels):
     use_list = [0]*n_tags
     use_list[11]=1
     print('f1_score',score( map(lambda x: all_tags[11] if x[-1]==1 else '',test_labels) , 
-      map(lambda x: all_tags[11] if x[-1]==1 else '',Z) ) )
+      map(lambda x: all_tags[11] if x[-1]==1 else '',Z),use_list ) )
     print( list(map(lambda x:x[-1],test_labels)) , list(map(lambda x:x[-1],Z)) )
 
   else:
