@@ -41,12 +41,10 @@ def normalize_text(desc):
   desc = re.findall(r"[\w']+", desc)
   desc = ' '.join( map( lambda x: str( WNL.lemmatize(x) ) ,desc) )
   # print(desc)
+  # exit(0)
   
   print >> logfile,  desc
   return desc
-
-def add_features(desc):
-  return normalize_text(desc)
 
 def score(labels,test_labels,use_list=[1]*n_tags):
   print('using list',use_list,len(labels))
@@ -74,6 +72,8 @@ def score(labels,test_labels,use_list=[1]*n_tags):
 # LOGISTIC REGRESSION
 
 def learn(desc,labels,test_desc,test_labels):
+  desc = list( map( lambda x: normalize_text(x), desc) )
+  test_desc= list(map( lambda x: normalize_text(x), test_desc))
   vectorizer = TfidfVectorizer(ngram_range=(1,2),use_idf=True) #,stop_words=stopwords)
 
   train_vectors = vectorizer.fit_transform(desc)
@@ -91,7 +91,7 @@ def learn(desc,labels,test_desc,test_labels):
     print('f1_score',f1_score( map(lambda x:x[-1],test_labels) , map(lambda x:x[-1],Z), average='macro' ) )
     use_list = [0]*n_tags
     use_list[11]=1
-    print('f1_score',score( map(lambda x: all_tags[11] if x[-1]==1 else '',test_labels) , 
+    print('f1_score2',score( map(lambda x: all_tags[11] if x[-1]==1 else '',test_labels) , 
       map(lambda x: all_tags[11] if x[-1]==1 else '',Z),use_list ) )
     print( list(map(lambda x:x[-1],test_labels)) , list(map(lambda x:x[-1],Z)) )
 
