@@ -35,6 +35,8 @@ n_tags = 12
 
 def normalize_text(desc):
   #  Remove ascii characters
+  desc = desc.replace('/', ' per ')
+  desc = desc.replace('$', ' DOLLAR ')
   desc = ''.join([i.lower() if ord(i) < 128 else ' ' for i in desc.decode('utf-8')])
   desc = re.sub(r'((https?://[^\s]+)|(www\.[^\s]+))','LINK',desc)
   # 
@@ -52,9 +54,11 @@ def score(labels,test_labels,use_list=[1]*n_tags):
   stp,stn,sfp,sfn=0,0,0,0
   for i,x1 in enumerate(labels):
     x2 = test_labels[i]
+    # print(x1,x2,stp,sfp,sfn,stn)
     for j,y in enumerate(all_tags):
       if(use_list[j]==0):
         continue
+      # print(y)
       if( y in x1 and y in x2 ):
         stp+=1
       elif(y in x1 and y not in x2):
@@ -165,17 +169,46 @@ def find_supervision(desc,sr):
       return all_tags[10]
   return ''
 
+def find_job_timings(desc,sr,key_words,semi,conf):
+  ld = len(desc)
+  # print(desc)
+  # key_words = ['per','hour'] #['experience','year']
+  # semi1 = ['hr','wage','earn','dollar','week']
+  # semi1 = ['year','salary','earn','dollar','annum']
+  confidence = 0
+  desc = re.findall(r"[\w']+", desc)
+  for trigger in key_words:
+    for i,u in enumerate(desc):
+      if trigger in u:
+        consider = desc[max(i-sr,0):min(i+sr,ld-1)]
+        for j,z in enumerate(consider):
+          for semi_word in semi:
+            if semi_word!=trigger and semi_word in z:
+              confidence+=1
+  if confidence>conf:
+    return True
+  return False
+
 def text_extract(desc,labels):
-  test_labels = []
+  test_labels = [[] for _ in desc]
   for i,x in enumerate(desc):
     desc[i]=normalize_text(x)
 
   for i,x in enumerate(desc):
-    exp = find_experience(x,6)
-    test_labels.append(exp)
+    # exp = find_experience(x,6)
+    # test_labels[i].append(exp)
+
+    if find_job_timings(x,4,['per','hour'],['dollar','wage','earn','week','day','hr'],2):
+      test_labels[i].append(all_tags[2])
+    elif find_job_timings(x,6,['per','year','annum'],['salary','earn','dollar'],1):
+      test_labels[i].append(all_tags[3])
+
+  # print(test_labels)
+
 
   if labels!=[]:
     use_list = [0]*12
-    use_list[8]=use_list[9]=use_list[10]=1
+    # use_list[2]=1
+    use_list[3]=1
     print('score',score(labels,test_labels,use_list))
   return test_labels
