@@ -1,0 +1,8 @@
+Intercom Federal Systems is seeking a highly qualified individual to join the Directory Services Team which supports the U.S. Department of States and other various branches.  Candidate must be experienced in the IT field with at least 6 years of System’s experience.   Candidates will be working in an increasingly complex environment, supporting other groups on multiple projects. Candidate must be familiar with Microsoft Active Directory, and has working knowledge with schema, group policy, and roles management. NetIQ Appmanager and/or Quest ActiveRoles Server knowledge is a plus. Must be comfortable interfacing with customers on a daily basis in order to troubleshoot or strategize on systems, and be able to develop and implement future changes.  Required Skills:  • 6+ years in supporting Information Technology • Technical, analytical, and experience in Active Directory planning, administration, maintenance, and security and related technologies • Be able to assist with problem solving complex IT issue and have excellent management and communication skills • Familiarity with one or more of the following software packages: NetIQ Appmanager Suite, HP Systems Insight Management, Quest ActiveRoles Server, Microsoft SCCM • Experience with supporting a global WAN environment • Familiarity with basic scripting (VB, Powershell) • Experience working in a team-oriented, collaborative environment.  Education and Certifications: • BS or other technical degree in related discipline (may be substituted with experience)
+
+
+
+
+
+
+bs-degree-needed 5-plus-years-experience-needed

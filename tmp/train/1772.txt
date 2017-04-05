@@ -1,0 +1,7 @@
+We are looking for Sr. Java Developer with previous experience working with document management/workflow spaces while providing system replacement, new development, and enhancements. Extensive design, development, and testing experience on SOAP-based searches and integration experience on search solutions with LOB applications required. The consultant must have hands-on J2EE expertise along with extensive knowledge of programming methodologies and development life cycles, XML/XSLT, .NET, JSP/Servlets, HTML /JavaScript, SQL and or DQL and Documentum WDK.
+
+
+
+
+
+

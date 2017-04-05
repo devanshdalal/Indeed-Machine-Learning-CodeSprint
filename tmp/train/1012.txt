@@ -1,0 +1,7 @@
+Data Integration experience using Oracle’s Data Integrator (ODI), across multiple source systems. Requirements gathering, design and implementation of ETL/Data Integration solutions. Development, debugging and performance tuning of ODI interfaces and SQL. Technical documentation/reviews, data validation & troubleshooting integrity issues, and system testing.  Process improvement & leveraging best practices.  Providing maintenance and support of IT applications and systems.
+
+
+
+
+
+

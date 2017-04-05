@@ -1,0 +1,8 @@
+Responsibilities: • Openstack experience required. • Architect and develop cloud automation capabilities.   • Performance tuning on cloud, Linux TCP/IP stack, filesystem, and code optimization in a multi-core system. • Develop kernel modules, support various teams on kernel extensions. • Perform software design, documentation and implementation.   Requirements: • Strong experience developing and deploying highly distributed systems in virtualized environments. • At least 5 years hands-on in Linux internal, kernel module, networking and/or filesystem development. • Openstack is required • Cloud automation experience with tools like Puppet • Must be proficient in C programming. Python is a plus. • Must be expert in at least three areas in Linux kernel: IP networking, process management, I/O subsystem, performance analysis, filesystems, memory management. • Vmware or KVM highly desired.
+
+
+
+
+
+
+5-plus-years-experience-needed

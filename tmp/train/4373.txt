@@ -1,0 +1,8 @@
+Responsibilities:  Design, develop and deliver Windows OS drivers for release. Debug and investigate software defects in kernel or user-mode drivers. Develop tests and tools to support validation of driver functionality and features. Work with test and program management peers to deliver high quality feature on schedule. Position Requirements:  At least 5 years of C/C++ professional development experience. At least 2 years of driver development experience, preferably on Windows with WDM, KMDF or UMDF. Strong kernel debugging skills and familiarity with Windows driver diagnostic tools. Strong design, analytical and testing skills Sound understanding of OS internals, kernel architecture, and device driver operation.        BSCS, BSEE or similar technical degree. Experience with USB, HID, I2C, or similar buses and protocols.        Experience using test equipment such as oscilloscopes or bus analyzer tools.
+
+
+
+
+
+
+5-plus-years-experience-needed bs-degree-needed

@@ -1,0 +1,8 @@
+This full-time position is based in *KANSAS CITY* -- Relocation assistance is provided.  If you are a skilled *javascript* developer and would like to be a part of growth without the uncertainty of early stage start-ups, demonstrate your engineering skills in a *Node.js* shop with a revolutionary financial platform that is patented, proven, and rapidly growing its multibillion dollar yearly totals worth of transactions.  This is an excellent opportunity to take part in Kansas City's vibrant tech culture (home of Google Fiber), great schools, and benefit from KC's affordable cost of living.  Preferred candidate will:  * enjoy solving hard problems * have an interest in algorithms * understand the importance of building a scalable architecture * have experience as a JavaScript developer * have a supportable opinion when asked if callbacks or promises are better * have a supportable opinion when asked if an ORM is really worth it * understand computers, networks, & security * have self motivation, drive, are self-taught, and have a great work ethic * be self-managed * believe in open-source software * be interested in learning new technologies, techniques, and standards  KEY SKILLS * Node.js or Asynchronous Programming * PostgreSQL * AMQP or Message Queues * AWS experience is a plus  Competitive salary, benefits, 401K packages, plus perks.  Candidates *must be authorized to work within United States. No sponsorships or third-parties available for this position.*
+
+
+
+
+
+
+full-time-job salary

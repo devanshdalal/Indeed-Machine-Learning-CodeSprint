@@ -1,0 +1,8 @@
+Education  B.S. in Information Technology, equivalent technical degree, or extensive IT experience.  Experience  Minimum 3 years of software development experience coding C# and VB.NET, using Visual Studio.  The candidate should also have strong experience building reports using SSRS, writing stored procedures, creating tables/views/etc. in SQL Server 2005/2008.  Experience with Epicor, SharePoint 2010, and SQL Server Analysis Services will be an added advantage.  Requirements/Responsibilities Create class libraries and services using the Microsoft .NET Framework and its associated technologies. Develop enhancements and maintenance of the .NET based ERP application. Create reports in MS Reporting Services Work on the maintenance/upgrade of other existing .NET applications and new applications. Write Stored Procedures, create tables/views/etc. in SQL 2005/2008 Strong communications skills required for interfacing with our users and the candidate should have experience in gathering/documenting/analyzing requirements.   
+
+
+
+
+
+
+bs-degree-needed 2-4-years-experience-needed

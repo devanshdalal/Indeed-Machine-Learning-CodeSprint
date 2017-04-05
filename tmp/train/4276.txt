@@ -1,0 +1,8 @@
+LiveAuctioneers is seeking a mid-senior level Python developer with NoSQL storage experience.  The ideal candidate is strong on Restful API design/programming, possesses experience with web architecture and solid knowledge of MongoDB.  High scalability programming is also a big plus.  NYC area local candidates preferred.  PLEASE NOTE: YOU MUST BE AUTHORIZED TO WORK IN THE US.  PLEASE DO NOT SUBMIT A RESUME UNLESS YOU POSSESS THIS REQUIREMENT.  *NO RECRUITERS PLEASE*  Preferred Skills: -Degree in CS/Engineering discipline -5 Years programming experience -Linux proficiency required -Python proficiency required -MongoDB proficiency -Bonus points for:     Tornado     Redis     Git -Must possess sense of humor -Experienced ping pong players preferred  Please submit linked in profile or resume and salary requirements as an integer.
+
+
+
+
+
+
+salary bs-degree-needed 5-plus-years-experience-needed

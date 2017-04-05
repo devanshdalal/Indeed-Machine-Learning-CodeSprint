@@ -1,0 +1,8 @@
+My client , a large fortune 500 company in the Los Angeles area , has started on the path to create a Cloud Center of excellence in their organization. We need an Amazon EC2 expert who can help my client  ramp up on their path to adopting  Amazon Web-services.     The role has three main responsibilities:  1. Provide ongoing Infrastructure support to applications hosted on Amazon EC2.  2. Help in creating  a governance model for ongoing support for the Cloud COE. The team will expand in the coming months and a blueprint for a proper support model needs to delivered.  3. Help in creating an estimation model for the Cloud COE.    Technical Skills needed  1. Cloud Computing   2. Linux / Windows Hosted in the cloud  3. SQL Server  4. Infrastructure Architecture  5. Strong communications skills  6. Experience deploying production applications to Amazon EC2 is a must.     Experience :  > 5 years , Mid-Senior Level. Technical Lead to an Architect position.    Long Term Contract position ( 6 months to an year) - can go more  
+
+
+
+
+
+
+5-plus-years-experience-needed

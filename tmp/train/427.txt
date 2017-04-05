@@ -1,0 +1,7 @@
+ My client is looking for a senior asp.net developer. Position starts on Wednesday, Must be available and live locally    C#, SQL, stored procs, MSMQ, sharepoint     5-8 years, including mission critical projects at large corporate concerns.   demonstrated experience in emergency troubleshooting under pressure.   Rapid acclimation on existing, complex code.     demonstrated maturity in development and lifecycle style, knowledgeable use of source control, technical design document development.   able to work alone, but also a knowledge sharer.     MVC a plus   
+
+
+
+
+
+

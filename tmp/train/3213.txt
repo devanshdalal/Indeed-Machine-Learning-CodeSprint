@@ -1,0 +1,8 @@
+The Essbase Developer will be responsible for maintaining the system data, hierarchies, chart of accounts and reports for the Hyperion Essbase System.   Responsibilities and Duties o Write scripts to load data to the system  o Load GL data for into Essbase from an extract.  o Develop, gather and prepare reports to be distributed to management  o Support the budget process through the planning tool with web-based templates from each line of business. File preparation, data gathering and loading, report preparation and distribution of the budget.   Required Skills o 5+ years of experience utilizing Essbase required o Hyperion Essbase experience required;  o Essbase administrator/strategy report development experience, preferred  o Working knowledge of financial statements  o Budget experience, preferred  o Strong analytical skills, detail oriented  o Multi-task on several requests at a time  o Experience with interacting with upper management
+
+
+
+
+
+
+5-plus-years-experience-needed

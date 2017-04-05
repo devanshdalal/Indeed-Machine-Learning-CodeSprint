@@ -1,0 +1,7 @@
+Analyze and study complex system requirements.  Design software tools and subsystems to support software reuse and domain analyses and manages their implementation.  Estimate software development costs and schedule.  Review existing programs and assist in making refinements, reducing operating time, and improving current techniques.   Must have specialized training in appropriate field of software development.
+
+
+
+
+
+

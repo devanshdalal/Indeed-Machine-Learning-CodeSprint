@@ -1,0 +1,8 @@
+Summary:  Java/J2EE developer consultant is responsible for designing and developing enterprise web applications at a leading financial institution located in Jersey City.   Responsibilities / Tasks •  Demonstrate expert level knowledge in Java and J2EE development and architectural technologies. Design and develop databases to support business applications, ensuring system scalability, security, performance and reliability.  •  Analyze and validate J2EE component requirements •  Code new features and function for existing J2EE applications. •  Experience with several relational databases including Oracle •  Working knowledge of application servers such as WebSphere, WebLogic.  •  Generate appropriate design documents and other forms of documentations to clearly represent the solutions being created.   Requirements: •  5-8 years experience in Enterprise Java J2EE development, preferably in the financial industry •  Experience with Design patterns (MVC), data structures and algorithm development •  Required to design, create and test Oracle DB related components (packages, stored procedures, tables, views, etc) •  Strong command of Java language, Server side programming (JDBS, JMS, Servlets, JNDI, JavaMail, Session Management, etc).  •  Experience using web development languages including JSP, HTML, Style Sheets, Java Script   Preferred skill: •  Knowledge of IBM WebSphere platform and related technology such as IBM Rational Developer, Crystal Report.  •  Development experience in a Linux/ Unix environment, shell scripting.   Start date: January 6, 2014 Duration: 3 month contract with an opportunity for an extension to 2015.
+
+
+
+
+
+
+5-plus-years-experience-needed

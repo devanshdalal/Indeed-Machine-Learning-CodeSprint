@@ -1,0 +1,8 @@
+*F5 Systems Engineer*  Job Description   • Configures and troubleshoots new and existing F5 installations • Contributes to incident resolution by diagnosing and troubleshooting the incidents, gathering additional information, follows change control processes, updates incident tickets with current information, proactively documenting status for each incident ticket, escalating issues to other technical resources and/or management as appropriate, and participates/monitors the resolution and/or root cause analysis process • Under minimal direction, perform preventative maintenance of all F5 Networks BIGIP LTM equipment with a complex IRule deployment to keep them up-to-date by installing/applying latest security and recommended patches/fixes that are released by vendor • Monitors performance, availability and capacity of all equipment and identifying/reporting potential concerns to management  Required Skills   • Networking basics (OSI Model, IPv4 addressing/masking, routing protocols, ARP, NAT, VLAN, VIP, TCP/UDP) • Minimum 3 years of experience as a system/network administrator and/or application support role in IT operations • Minimum 1 year of experience with F5 LTM expertise (v11.x preferred) • Able to document procedures and train others – documentation skills a must • Understanding of network security, encryption tools, etc. (SSH, VPN) • Working technical knowledge of current network hardware and protocols • Strong customer service and interpersonal skills • Unix / Linux BIND Administration is a plus • SOA-P, L7, Tibco administration experience a plus
+
+
+
+
+
+
+2-4-years-experience-needed supervising-job

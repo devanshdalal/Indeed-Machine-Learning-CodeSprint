@@ -1,0 +1,8 @@
+We are looking for an experienced Apache/Tomcat administrator to bridge the gap between outgoing and incoming permanent staff. We employes Apache & Tomcat on Windows 2008 servers to serve our several web applications and web services.  This person will be responsible for monitoring and maintenance of the servers, including management of SSL certificates, key stores, and trust stores; as well as capacity planning, and implementation of new applications onto development, staging, production, and disaster recovery servers.  Qualification   Information Technology - Design Applying knowledge of service oriented architecture design techniques *  4+ Yrs. Service Orientated Design and Architecture * 3+ Yrs.  Information Technology - Server Support Monitor and maintain software and hardware for optimal performance *  4+ Yrs. Server administration *  4+ Yrs.  Information Technology - Testing Web-Based Architecture * Yes  Information Technology - Web Apache and Tomcat * 4+ Yrs.
+
+
+
+
+
+
+2-4-years-experience-needed

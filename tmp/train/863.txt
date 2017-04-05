@@ -1,0 +1,8 @@
+Developer -VB.net,ASP.net (2.0/3.5)SQL (MS  Capgemini/Warner Bros.   Burbank CA.  Max bill rate is $45 / hourly all in     Design of solutions to enhance functionality of our onboarding and budgeting applications. Conduct Incident Management, including incident resolution, queue management, and SLA monitoring. Assist in managing an offshore team of developers and support staff, including time management, assistance in defect resolution and knowledge transfer Run reports for the client and local management, both from owned and external systems. Assist in the process of estimating project work hours and finalizing project agreements. Manage relationships between the department and the client. Research application issues and take ownership to resolve the issues, working closely with the client and offshore developers, as required (this may include attending and instigating conf calls to off shore Create technical documentation of custom applications and enhancements. Work with manager to develop work plans for development projects, which includes detailed tasks and timelines. Regular status reporting on all assigned projects  **Required** VB.net ASP.net (2.0/3.5) SQL (MS) Crystal Reports javascript AJAX Jquery LINQ General Object Oriented Programming Communication skills (written and oral) **Optional** Oracle SQL Classic ASP C#.net SAP **Plus** Experience with CA Clarity (12.1) Experience with Approva One (6.2) Experience with EAMS (Troux) Experience with tickets (ITSM, incidents, change management)  
+
+
+
+
+
+
+hourly-wage

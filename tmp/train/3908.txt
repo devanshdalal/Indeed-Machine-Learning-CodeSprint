@@ -1,0 +1,7 @@
+* Strong MicroStrategy Report development skills with v9.x and an understanding of optimal MicroStrategy schema design. * Designing and developing MicroStrategy Reports, Documents, Dashboards and Scorecards per specified requirements and timelines * Experience facilitating requirements gathering and discovery sessions. * Good understanding of Data Warehousing architectures, techniques, and methodologies; including Start Schemas, Snowflake Schemas, Slowly Changing Dimensions, and Aggregation Techniques. * Hands on experience with creating Schema objects like Attributes, Facts, Hierarchies, Transformations. * Good understanding of MicroStrategy administration including Troubleshooting environment, User setup, Security, Object Migrations etc * Good Knowledge of SQL and ability to tune SQL. * Effectively communicate with client teams and internal team * Occasionally participate in the software pre-sales activities which includes development of customer proof-of-concept solutions and technical feature demonstrations
+
+
+
+
+
+

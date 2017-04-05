@@ -1,0 +1,7 @@
+Harris Media, LLC is the nation’s leading media and communications firm with offices in Austin, Texas and Orlando, Florida. We have worked along-side sitting Governors, Members of Congress, State Legislators, Local Candidates, non-profit advocacy groups, small businesses, and even a top tier Presidential campaign.  The lead web developer will manage and maintain all websites and other development projects. The lead developer should be comfortable in back-end development with PHP and front-end development with HTML, CSS, and JavaScript. The required and preferred skills are listed below.  Required: Experience building custom themes and/or websites with WordPress Advanced experience with HTML, CSS Intermediate or advanced experience with Javascript (including jQuery) Intermediate or advanced experience with PHP / MySQL Although you do not need experience with OOP, you must write secure, modern, and well-documented code Able to use PHP and JavaScript to interact with RESTful APIs Able to implement payment/donation systems (Paypal, Authorize.net, etc)  Preferred, not required: Version control Project management Object-oriented PHP programming and frameworks 
+
+
+
+
+
+

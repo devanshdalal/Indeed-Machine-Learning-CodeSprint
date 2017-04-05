@@ -1,0 +1,8 @@
+Desktop Engineer that has strong Packaging and deployment exp. that can do a 1 yr long contract at an Investment firm in Downtown Boston. Hourly rate is $70-75 per hour.     The role is as follows:     •Create application deployment packages to automate the deployment of COTS software to the enterprise, integrating corporate standards while maintaining vendor supportability - Specifically Windows 7  •Continually refine the packaging template to improve the overall software deployment process  •Work with members of the Desktop Engineering team, business analysts, support staff, pilot users, and vendors to determine business and technical requirements, obtain vendor-supported methods of customization, and to gather feedback regarding user acceptance testing    Requirements:  •Expert knowledge of WiseScript and Microsoft Installer (MSI)  •Advanced knowledge of VBScript or Batch.  •Experience w/ Windows 7 x64 related issues, including UAC, Active Setup  •Full knowledge of OS operations, registry, DLLs, etc.  •Proficiency w/ standard packaging and troubleshooting tools   •Experience w/ developing shims using Application Compatibility Toolkit desired  •Experience w/ Microsoft SCCM or SMS desired    
+
+
+
+
+
+
+hourly-wage full-time-job

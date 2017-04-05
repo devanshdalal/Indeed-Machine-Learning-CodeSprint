@@ -1,0 +1,7 @@
+Are you a wizard at building out frontend web designs and interfaces? Foxtrot Media is looking for junior to mid-level web developers with PHP programming skills (LAMP) to join their rock star team of programmers. While any future employee would be involved in all stages of the web development process, we are looking for an applicant with especially strong skills in frontend development using the templating systems associated with popular CMS frameworks.  Professional PHP experience is preferred, but not required if a strong level of personal and/or educational experience can be demonstrated. In this role, you will be developing a variety of web applications in PHP, CSS and Javascript and working extensively within CMS frameworks like WordPress, Joomla and Drupal.  In addition to LAMP development experience, applicant should contain strong skills in website analysis, project planning and management, and creative problem solving. Applicant should also be a self-learner and capable of defeating Glass Joe in Mike Tyson's Punch-Out!!  Application can be found here! www.example.com
+
+
+
+
+
+

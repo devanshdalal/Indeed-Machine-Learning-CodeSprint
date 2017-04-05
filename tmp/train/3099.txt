@@ -1,0 +1,8 @@
+Responsibilities:  ·  Implement and support Windows server infrastructure  ·  Maintain and monitor the server infrastructure  ·  Plan and implement new servers, including hands-on hardware setup, OS and Server Application configuration (Active Directory, Exchange, and other core server applications)  ·  Plan and support Active Directory functionality such as Group Policies  ·  Work closely with Desktop Support to address user needs, roll out desktop software, security updates, and routine server maintenance  Requirements:  ·  B.A in computer science, or relevant working experience.  ·  At least 3 years Server Infrastructure and Exchange experience.  ·  Strong familiarity with Microsoft Exchange 2010, OCS/LYNC, SQL, Blackberry Enterprise Server V5, CA ArcServe, Windows Server 2003/2008, Active Directory Management, DHCP, DNS, group policy.  ·  Experience with WSUS, Symantec Backup Exec, Dell Hardware (10th, 11th and 12th Gen), VMWare vCenter 5.1, RSA and Bluecoat is a requirement.  ·  Microsoft Server type Certifications is a plus.  ·  Experience in hardware troubleshooting, and vendor support contacts.
+
+
+
+
+
+
+bs-degree-needed 2-4-years-experience-needed

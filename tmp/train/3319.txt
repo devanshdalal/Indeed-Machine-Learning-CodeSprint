@@ -1,0 +1,8 @@
+Title: JavaScript/UI Developer Location: Jersey,City, NJ (No Remote, onsite only) Duration: Contract to Hire  Seeking a Java UI Developer to work on a brand new product in production. Client has a formal Agile environment.  Responsibilities: - Perform research, analysis, design and implementation. - Establishes partnerships with internal customers including Product Managers, Project Managers, Engineers, and Systems Architects. - Consults with outside organizations including vendors and standards groups. - Delivers products that meet business goals and financial objectives. - Mentor other team members and developers. - Work in team environment and share knowledge. - Evaluate new technologies and software products to determine feasibility and desirability of incorporating their capabilities into the platform. - Track record of delivering products on time. - Excellent written and oral communication skills. - Contributes as a hands-on software developer.  Requirements: - 5+ years experience in the design, architecture, and implementation of highly scalable web applications using the following technologies: AJAX, J2EE, XML, XSL, Jasmine, Jquery, Javascript, CSS Spring, Web Services, HTML, and REST. - Experience with cloud hosting a plus. - Experience with AngularJS a plus. - Experience with Agile Software and Test Driven Development methodologies. - Bachelors degree in Computer Science with a Masters degree preferred.
+
+
+
+
+
+
+bs-degree-needed 5-plus-years-experience-needed

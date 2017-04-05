@@ -1,0 +1,8 @@
+We, a Silicon Valley start-up, invite you to join us in development of a cloud application platform for information management and telecommunications.   Have you ever waited on the phone for too long, only to be connected to wrong department, get transferred, and repeat your case again? Have you ever wondered after hanging up if they would do what they promised?   Make a difference for thousands of people contacting our customers, so they could wait less, get relevant responses on first contact and receive service exactly as promised, be it over the web, by e-mail, chat or by telephone.   *Responsibilities of Senior Software Engineer/Java*  • Development of combined customer relationship and interactions (phone calls, e-mails, chat, twitter) management system: GWT, Java, HTML5, JQuery, MySQL, MongoDB   *Benefits*  • New development, innovative product • Strong professional team • Great opportunity for personal development   *Requirements for Senior Software Engineer/Java* • Have a practical experience in writing in Java for several years • Have an ability and desire to own a component and be single-handedly responsible for its development • Be an expert in your technical area • Be able to work in a team in a large project with shared efforts • Be able to read and understand technical documentation in English • Knowledge of Javascript is a plus • Knowledge of C++ is a plus • Knowledge of web technologies is a plus • Linux experience (development, operation, administration) is strongly desired
+
+
+
+
+
+
+licence-needed

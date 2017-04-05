@@ -1,0 +1,8 @@
+mPortal is seeking an iOS app developer to build native mobile applications in a collaborative environment.  The ideal candidate should be creative, yet detail-oriented, and take extreme pride in his or her work. The candidate must be experienced, able to solve complex problems, and be prepared to work on the cutting edge of technology.  Job Responsibilities: - Work with mPortal’s iOS team in building cutting-edge technical solutions for our largest customers. - Collaborate with design team to architect small applications that leverage the latest iOS technologies. - Help drive new proof-of-concepts that showcase the capabilities of the device and provide creative solutions for our customers. - Ability to travel to mPortal’s customer’s office and work to define product requirements.  Skills and Experience: - Bachelor’s Degree in Computer Science, Computer Engineering, or relevant work experience - 2 years developing mobile application for iOS. - Examples available via the App Store or available for demonstration on-device. - Understanding of interactive application development paradigms, memory management, file I/O, network and socket programming, concurrency and multi-threading - Experience leveraging the iOS frameworks to access native capabilities of iPhone/iPad, such as camera and location services, and OS features such as calendar integration, contacts integration, AirPlay, push notifications, and PassBook integration.
+
+
+
+
+
+
+2-4-years-experience-needed bs-degree-needed

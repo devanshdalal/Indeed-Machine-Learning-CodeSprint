@@ -1,0 +1,8 @@
+We are currently looking to hire a Senior Programmer with Csharp/Ado/.net  We are looking for full time, in house, on-site Senior Programmer. Current systems incorporate PHP, ASP.NET,C# languages and connect to MYSQL and MSSQL database. Must know how to build in a collaboration enviornment with source control versioning and deployment.   Technical Requirments:  * Minimum of 10+years combined experience, relevant software development work experience * 10+ years combined experience using C#, ASP.NET and .NET framework * Familiar with MV structuring and CMS * Componet/Modular building  * High load application development * Unit/load testing, NUnit,etc * Web service development, API, RSS, and XML * MS SQL Server/Transact SQL * 5+ years of experience using version control systems,e.g. microsoft visual source safe (VSS),sub version, source safe, ALM, etc * Excellent written and verbal communication skills, good documentation and adhere to specifications * Ability to work independently as a self-starter and within a team enviornment * Proficient with Google, Yahoo, and Bing SEO key word optimization * Ability to automate SEO * Web design  * Daily photo uploads  Job Requirements:  1. Manage new ASP.NET Websites 2. Implement changes and improvements to legacy systems 3. Structure Databases and verify data 4. Integrate third party software 5. Report daily progress to managers and check in changes to source control 6. Build web services, RSS, and XML for distribution across family and third party sites 7. Load and Unit test all web applications  Salary:  $65-$90K per year depending on experience   XXX  
+
+
+
+
+
+
+salary full-time-job 5-plus-years-experience-needed

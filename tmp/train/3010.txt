@@ -1,0 +1,7 @@
+Resource will need to demonstrate, display, or expertly discuss their experience with the following: Responsive Application development challenges and advantages How an app or parts of an app they designed scales or renders same pages from desktop to mobile How they handled parsing functionality on a desktop page to be available on desktop only while parsing other parts to run on both desktop and mobile.  EXPERIENCE AND REQUIRED SKILLS:   Technical proficiency with highly specialized in Web-based technologies, specifically .NET, C# or VB, JavaScript, SQL and web service protocols.  Ability to act independently given general direction.  Ability to work creatively, analytically, and independently in a problem solving environment.  Experience and firm comprehension of Software as a Service development.  Excellent task management for self and other .NET software developers. Outstanding verbal and written communication skills.  Demonstrated ability to deliver quality results on time and within budget.  Ability to comprehend business requirements, functional and technical specifications delivered by the Business Analysts to implement software solutions.  Work cooperatively with product development management.
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+A hands on Senior Programmer needed for statistical algorithm implementation  using open source R packages.    Descriptions:  Design, document, develop, and code mathematical models into software solutions using R and Java(optional)  Perform analysis on existing data and build predictive models  Participate and contribute in a collaborative environment with a group of experts on problem identification and solutions      Design and develop repeatable unit testing strategies with development teams      Work closely with business teams and technical teams to gather, analyze and understand business requirements, participate and contribute to solution models, and design/debug/develop the final software product   Position requirements:  • Hands on Implementation experience (expert) in R is required, JAVA highly desirable.  • Experience in a full life-cycle software development environment is desirable.    • Minimum of a Master’s Degree in Operations Research, PhD preferred  • Minimum 3 years of industry experience in related fields  • Creative approach to problem solving and solution designs  • Statistical and data mining expertise, including 3rd party tools such as R (preferred) or SAS  • Excellent written and verbal communication skills  • Linear and Integer Programming methods  • Knowledge of JAVA / J2EE 
+
+
+
+
+
+
+ms-or-phd-needed 2-4-years-experience-needed

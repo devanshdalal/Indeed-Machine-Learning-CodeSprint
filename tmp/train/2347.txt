@@ -1,0 +1,8 @@
+VectorLearning is seeking a SQL Analyst and Report Writer to create custom reports and to write and analyze SQL Server queries and stored procedures.  Responsibilities • Create custom SSRS reports;  • Develop intimate knowledge of enterprise systems’ underlying data structure; • Create and run ad hoc SQL queries; provide organized, formatted query results to business users; • Create and run SQL queries and procedures to scrub databases and maintain data integrity; • Assist in administering SQL programming code for record matching and ETL; • Manage and run data imports using third-party ETL tool.   Requirements: • Bachelor’s degree required (CS/ MIS, Mathematics or Statistics preferred); • 1 to 2 years of MS SQL Server programming experience—writing complex queries, stored procedures, etc.; • 1 year report-writing experience (SSRS or Crystal Reports preferred);  • 1 year ETL experience (SSIS or Scribe preferred); • Good writing skills both for general communication and for writing process documentation; • Ability to communicate and work effectively with end-users; • Ability to function in a high-volume, high-stress environment.
+
+
+
+
+
+
+bs-degree-needed 1-year-experience-needed

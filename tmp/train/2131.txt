@@ -1,0 +1,8 @@
+Job Title: Senior Software Engineer Location: New York, NY  Employment Status: Full Time  Compensation: Salary + Stock Options  Benefits: Yes   Job Description:  We are looking for a talented software developer to join our small but growing engineering team. The candidate will be involved in the architecture, design and implementation of TradeSync's core web-based enterprise application suite. The ideal candidate will have a math, CS, EE, and/or physics degree from a top-tier university and 2-5 years of industry experience. Fluency in object-oriented programming is required, and experience in Java/XHTML/JSF is a plus.   Resume must include academic credentials, including GPA.  More information about TradeSync can be found at www.example.com
+
+
+
+
+
+
+salary 2-4-years-experience-needed full-time-job bs-degree-needed

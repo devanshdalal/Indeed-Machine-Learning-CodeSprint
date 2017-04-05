@@ -1,0 +1,7 @@
+*Description:* The Web Designers will move features from a classic ASP web application to an ASP.NET VUI application.  They will work with the BAs to turn their rough wireframes into polished web pages.  They'll also be asked to provide a uniform look and feel across the VUI app.  Suitable design documents for creating low level design documents will be provided by the Technical Writers from whiteboard design discussions capture.  *Required:* *Transitioning classic ASP to ASP.NET *Creating ASP.NET VUI web applications (not Voice User Interface applications, VUI is a s/w client is using) *Translating wireframes into polished web pages *Usability experience, creating a uniform look and feel *Agile experience is a plus *Strong communication skills
+
+
+
+
+
+

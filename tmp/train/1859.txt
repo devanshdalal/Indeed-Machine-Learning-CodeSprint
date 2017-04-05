@@ -1,0 +1,7 @@
+UCB has an excellent contract opportunity for a web services developer at a research lab in Palo Alto, CA.  You will be responsible for building state-of-the-art web services using a REST API and for building mobile clients using frameworks such as PhoneGap.  The position provides an excellent working environment with great benefits.  Please send your resume if you meet the following requirements. We require on-site interviews.  Required skills and experience:  - Must have: strong knowledge and working experience with jQuery Mobile, Phone Gap and Java/JSP - Experience building web services using a REST API - Experience with 3rd party push notification service such as Pushwoosh or Urban Airship - Experience in web development, building web services under various platforms and using various programming languages - In-depth knowledge and experience of web programming and scripting: HTML, XHTML, CSS, XML, XSLT or XQuery, JavaScript or jQuery - Strong knowledge and experience with Databases: MS SQL and MS Access - Web Service technologies: REST, JSON or APIs - Excellent communication and problem solving skills - Ability to work with limited supervision and to be a self-starter  Compensation: Competitive, Based On Experience Duration: 3-6+ months, 40 hours/week Start date: July/Aug 2013 Location: Palo Alto, California Contact: resume AT ucb DOT net /  XXX 
+
+
+
+
+
+

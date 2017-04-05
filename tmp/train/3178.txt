@@ -1,0 +1,8 @@
+BermanBraun, a Santa Monica media agency, is looking for a full-time DevOps / Infrastructure Engineer.   Job Description: Looking for an experienced DevOps / sysadmin to work with our fast-growing media company. You'll be working with our small-but-growing development team to provide infrastructure support and deployment tools. We work in a fun, fast-paced, agile environment and have an extensive product roadmap ahead of us. We work with the best tools available, love the open source community, and pride ourselves on keeping our technology cutting-edge. You will have the opportunity to contribute your expertise and ideas to our product at every stage.  Responsibilities:  Work with our staff to maintain our existing AWS-based infrastructure Maintain and extend our Saltstack-based deployment tools Build video upload/transcoding pipeline using Elastic Transcoder Build infrastructure for live streaming video system  Requirements: At least 4 years experience working with Linux Expert level experience working with the full range of AWS tools Familiar with Python and preferably Saltstack Experience with Postgres and knowledge of sharding / replication strategies Knowledge of Redis & Memcached caching system management Familiar with Git and Github version control and deployment  Bonus skills: HAProxy Experience working with Django deployment
+
+
+
+
+
+
+2-4-years-experience-needed full-time-job

@@ -1,0 +1,8 @@
+AlchemyAPI is a natural language processing API used by 32,000 developers 3 billion times per month. Work for a profitable and venture-backed startup with headquarters in Denver, CO, overlooking the confluence of Cherry Creek and South Platte River. We believe in work life balance and maintaining a culture of engagement.  *Responsibilities*  As an API Evangelist, you use your social nature and engineering knowledge to inspire developers to use AlchemyAPI while supporting them along the way. As a Developer Advocate, you ensure that the information we provide (documentation, SDKs, FAQ, and API presentations) is exactly what the developer needs to successfully integrate our API into their app. You represent AlchemyAPI at hackathons around the country while engaging and supporting developers as they use our API. You love people and enjoy sharing ideas with other developers both online and in person.  *Qualifications*  * BS degree in Computer Science or 2-3 years equivalent experience * Strong networking skills and comfortable speaking with engineers * Experienced software developer with well-rounded coding skills in a wide range of web technologies including REST, JSON, PHP, XML, etc. * Experience participating at Hackathons  *Benefits*  * Medical, dental and vision insurance * 401k * Paid holidays and two weeks vacation * Gym membership, Elitch Gardens Season Pass (right next door), B-cycle membership  *To Apply*  Please include a cover letter with your resume and include your desired salary range.
+
+
+
+
+
+
+bs-degree-needed

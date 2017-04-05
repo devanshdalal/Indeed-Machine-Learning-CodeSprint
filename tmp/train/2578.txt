@@ -1,0 +1,8 @@
+Position Summary: Person selected will perform computer programming functions in support of various automated systems.  Must have the ability to work under minimum supervision.  Must understand and have experience interpreting customer requirements to develop, test, and deploy computer software.  May work on a team or independently depending on the task.  Requirements:  1. Ability to obtain and maintain a DoD Secret Clearance 2. Bachelor degree in Computer Science, Information Systems, Engineering, Business, or other related discipline and five years relevant experience 3.     Must meet requirements of DoD 8570 IAT Level II (i.e. Minimum of CompTIA Security+ Certification)  Position Details: Tasks include but are not limited to: 1. Manage the performance of several programmers and several programming actions 2. Analyze functional business applications and design specifications for functional activities 3. Develop block diagrams and logic flow charts 4. Translate detailed design into computer software 5. Test, debug, and refine the computer software supported to produce the required product 6. Prepare required documentation, including both program-level and user-level documentation 7. Enhance software to reduce operating time or improve efficiency 8. Provide technical direction to programmers to ensure program deadlines are met 9. Perform software development in the following programming languages: .NET, C#, C/C++
+
+
+
+
+
+
+bs-degree-needed 5-plus-years-experience-needed

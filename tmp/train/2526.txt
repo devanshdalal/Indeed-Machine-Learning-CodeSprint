@@ -1,0 +1,7 @@
+Ozone International LLC seeks a network engineer responsible for designing, installing, configuring, and maintaining its network infrastructure and application components.  Among other IT support activities this position will work tightly with engineering and operations department to architect and maintain a network infrastructure used to monitor and establish remote connectivity to terminal equipment deployed nationwide.  Duties and Responsibilities: • Must have a thorough understanding of DNS, Security protocols, IP routing, LAN, WAN, HTTP, VPN, SNMP etc. • Configure and setup firewalls, VPN concentrators, VPN capable routers, Security appliances, etc. • Setup and configure complex switching environments. • Install and configure client and server network software. • Design and maintain server computer hardware. • Provide support and technical assistance to staff and customers. • Troubleshoot network hardware and software problems. • Knowledge and maintenance of SQL database. Database programming skills a plus. • Network scripting, shell scripting, perl scripting. • Some programming experience preferred. • Experience with network management/monitoring systems and tools.  • Strong written and verbal communication skills.  Self motivated and highly organized. • Ability to communicate effectively with customers, programmers, staff engineers, and plant operators. • Proficiency in written and spoken English. 
+
+
+
+
+
+

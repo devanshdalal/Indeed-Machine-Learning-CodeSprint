@@ -1,0 +1,8 @@
+Kemtah is looking for a Senior Software Developer in Idaho Falls, ID for an 8 Month project.  Description of needs:  Level 3 or 4 highly technical support in the areas of systems analysis, design, programming, testing, and implementation for the successful completion and operations of applications. Make preliminary selections and adaptations of technical alternatives.  Must demonstrates software engineering best practices through all the phases of the software development life-cycle, which includes planning, analysis, design, development, testing, deployment, and operations/ maintenance/enhancement, and retirement. Conducts on-going analysis of existing software engineering application and develops tools to eliminate inefficiencies. Stays abreast of software engineering developments in government and industry.  Must have the ability to be a strong team player and effectively organize and lead tasks. Organizational skills are essential. The ability to communicate with both business and technical audiences is essential. Must be able to effectively execute from concept to operational implementation.  Required skills: Develop in C#/.Net Strong UI design skills. Oracle Server Development Telerik tools for .Net  Desired skills: Experience with Google Search Appliance Experience in the area of Knowledge Management (Data Analysis, Metadata extraction, Indexing, etc.) Java web development experience (Tomcat server, GSA Connectors) Experience working in a Juniper Networks environments
+
+
+
+
+
+
+licence-needed

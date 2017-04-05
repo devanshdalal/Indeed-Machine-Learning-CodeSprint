@@ -1,0 +1,8 @@
+InferLink Corporation is looking for a full-time, contract software engineer to help power our expanding R&D work building cutting-edge intelligent systems for online data analysis.   We are an El Segundo-based start-up that applies machine learning and other AI techniques to making inferences from data.     This is a contract position that may eventually evolve into a full-time position.  No prior experience with machine learning or AI technologies is needed, but any prior background is a plus.  This is an on-site full time contract position.   Key qualifications ===========================================  - B.S. or M.S. in Computer Science from an accredited university  - Commercial experience as a Java developer (3+ years)  - Comfortable working/deploying software on Linux-based systems  - SQL and/or NoSQL data management experience  - Familiar with web application development (HTML, JavaScript, etc.)   Additional qualifications (not required, but considered a plus) ===========================================  - Prior experience with machine learning + statistical analysis  - NLP experience  Those who do not meet the key qualifications above and cannot be on-site will not be considered.  InferLink is a fun and flexible place to work, with great health & dental benefits, competitive compensation, and a great small advanced technology team.
+
+
+
+
+
+
+bs-degree-needed 2-4-years-experience-needed full-time-job

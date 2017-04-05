@@ -1,0 +1,8 @@
+*Job Description*  SUMMARY:   *Developer will be doing work on Client's .Net based Multi-channel SOA architecture platform, creating new functionality, new channel (social, chat, etc) as well as developing client solutions using this platform.*  *EDUCATION AND/OR EXPERIENCE:*  •Bachelor’s degree in Computer Science, Information Systems, Engineering, or equivalent or a minimum of 2-3 years of software development experience.  .Strong development skill is the primary requirement.  REQUIREMENTS/SKILLS:  •Have excellent verbal, written and interpersonal communication skills as well as the ability to communicate appropriately with both technical and business experts;  •Should demonstrate good analytically, problem solving, and quantitative analysis skills;  •Possess ability to work independently with minimal supervision;  •.Net/C# experience is a big plus.  Experience with databases, SOAP, Web Services, Networking is a plus.   Demonstrate proficiency in the Microsoft Stack  •Strong verbal, written and interpersonal communication skills.  •Disciplined and effective approach to composing technical documentation.  •Working knowledge of hardware and networking concepts associated with the configuration and maintenance of software application environments.  •Possess the initiative, motivation and interest to bring value to an organization and enjoy the pursuit of innovative and practical technology solutions.  •Responsibilities may require evening and weekend work in response to needs of the systems being supported.   
+
+
+
+
+
+
+bs-degree-needed 2-4-years-experience-needed

@@ -1,0 +1,8 @@
+Description: The role of the Senior Programmer is to develop, maintain and update assigned projects in a timely and efficient manner. Responsible for moving the software from a server based product to a browser based product.  This position is a full time salaried position.  Responsibilities: • Develop, maintain and update data software, lab interfaces, accounting interfaces, internal Call Audit, Email Audit, PatReg (Web Registration) and other client Utilities as assigned. • Create custom client applications. • Document all progress, issues and resolution within proprietary software, according to company policies, which include documenting all conversations and e-mails. Skills: • Ability to bring project to successful completion within appropriate timeline. • Demonstrate flexibility during times of change and ability to adjust to shifting priorities, demands and timelines. • Adept at independently conducting program research and understanding when escalation to a manager or other programmer is appropriate. • Ability to learn, understand, and apply new technologies independently and with training.  Qualifications: • Mid to senior level Delphi Programmer (5 Years and up industry experience) • Minimum 3 Years Experience with Delphi • Experience with Delphi 2007 or higher • Knowledge of HTML,XML,DOS,SQL commands, database concepts, object oriented concepts • Experience with SOAP, socket communications, C++, C#, Delphi RAD Studio, HL7, DICOM a plus • Must be able to read other programmers code and modify/debug existing applications • 4 year degree in computer science                   Medical equipment interface programming experience is required.    
+
+
+
+
+
+
+salary bs-degree-needed full-time-job 5-plus-years-experience-needed

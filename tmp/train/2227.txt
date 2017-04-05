@@ -1,0 +1,8 @@
+Oakwood Controls has an immediate opening for a Junior Software Engineer to join our on-site team at Fort Belvoir, VA.    This person will be responsible for maintaining existing software code (mainly developed using Java, Scala and Erlang on Linux platforms) as well as programming new software (for Linux as well as Windows platforms).  Required Qualifications: * Bachelor’s Degree (BS) in computer science or related field from a four-year college or university * Software development experience in Linux environments * Experience with Object Oriented Development * Desire and ability to quickly learn and program with new languages * Ability to develop and implement testing/debugging procedures * Ability to write code in a modular fashion so it can be easily integrated with existing and future code modules * Ability to maintain code written by others * Solid code commenting track record * Ability to work well with others in a small team environment  Additional Desired Qualifications: * Experience with threading and multithreaded programming * Experience in a research and development environment * Embedded programming experience * Windows development experience * Functional programming experience  Some travel may be required.  Applicants must be American citizens and either have a permanent or interim security clearance or be able to obtain one.  Applicants must be able to work in a very rewarding, dynamic, and continually changing group setting.  If you believe you meet these qualifications and are interested in working with a young but growing company, please email your resume in PDF format. Please do not contact us via phone or in person.  No recruiters please.
+
+
+
+
+
+
+bs-degree-needed

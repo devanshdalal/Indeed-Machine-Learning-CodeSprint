@@ -1,0 +1,7 @@
+Phoenix Integration is looking to add Software Engineers in our R&D facility located in the Virginia Tech Corporate Research Center in Blacksburg, VA. We create software products for Design Optimization and Simulation Data Management: ModelCenter, CenterLink, and Analysis Library. Our software suite automates engineering applications and runs them multiple times to find optimal solutions (e.g. Design of Experiments, Optimization, Monte Carlo). Our customers consist of leading aerospace firms including NASA, Lockheed Martin, Boeing and Airbus. More information about Phoenix Integration can be found on our website: www.example.com.    We are looking to add a documentation specialist to complement our software development team. In this role you will have responsibility for producing online and .chm help file documentation for our products and APIs. This will involve learning our products and working closely with developers as new products are created. You will also be involved in creating and conducting training material for our products.    Successful candidates will have good writing skills with a general background in engineering. Experience in several of the following is desirable:  * .chm files  * Software APIs (C#, Java)  * Web Development   * MDO, Design Optimization, DFSS, Data Visualization, Monte Carlo  
+
+
+
+
+
+

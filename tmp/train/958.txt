@@ -1,0 +1,8 @@
+We have multiple Cellular System Engineering positions available. You must; 1. Be a current H1B Visa holder, Green Card or USA Citizen. My clients will not sponsor a new H1B Visa. 2. Have 3 years or greater applicable experience. Recent graduates are not eligible.  Qualification  • Bachelor’s or Master's degree Masters Degree in Engineering  • 4+ years RF Optimization experience for UMTS • 2+ years of LTE optimization desirable • Thorough understanding of GSM/CDMA/UMTS/LTE RF network design and optimization. • Knowledge of RF Optimization procedures and RF Optimization tunable parameters. Experience in LTE optimization is particularly desirable. • Knowledge of optimization tools and work in a commercial wireless system are desired. • Hands-on experience with statistics and call traces from OSS and other Network Elements and relationship with  KPIs for UMTS/LTE • Strong Knowledge of CM, FM, PM, Interference and HO data. • Knowledge of UMTS/LTE vendor equipment ( ALU, Ericsson, Huawei, NSN). 
+
+
+
+
+
+
+bs-degree-needed 2-4-years-experience-needed

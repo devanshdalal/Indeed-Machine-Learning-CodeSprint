@@ -1,0 +1,8 @@
+We are hiring a Sr. Design Engineer to work with client company. This is a direct hire opportunity with a global corporation. Must meet the following requirements...  Job Requirements :   ·Must be able to write reusable System Verilog RTL codes, follow design and DFT guidelines,  ·Must have knowledge of design for low power and design for test and manufacturing  ·Must have detailed understanding of gate level simulation flow and timing paths  ·Able to write C and MIPS Assembly code based tests to verify SoC functionality  ·Able to write good documentation for micro-architecture specification (MAS) at the SoC & module level  ·Able to write SoC level verification test plans  ·Able to provide clocks and constraints for synthesis and static timing analysis  ·Able to run formal verification/equivalence checking  ·Able to write functional test patterns for production test program  ·Have scripting and automation skills - Linux shell scripting, Perl, Tcl, Makefile & revision management (CVS etc)  ·Have familiarity with system verilog for verification, VMM, assertions, cover points  ·Strong analytical, and problem solving skills, as well as hands-on SoC debugging / bring up skills  ·Self-motivated, able to work independently, excellent communication skills, excellent presentation skills for design reviews and ability to excel in a team environment  ·MSEE with 3+ years of industry experience (or BSEE with 5+ years working experiences)  Client company offers a very comprehensive benefits package, holiday pay, vacation, sick time, and much more. Full relocation assistance available for the ideal candidate.   Salary range: $75-$90K DOEE
+
+
+
+
+
+
+salary 2-4-years-experience-needed

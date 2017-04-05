@@ -1,0 +1,8 @@
+Contractor on 1099 , 6 month+  The Security SOC Engineer is responsible for the day to day management of security policies and configuration of various technologies in use within the Global Security Operations Center. This role ensures that the technologies implemented by the GSOC are fully operational, and is responsible for creating and maintaining security policies and configuration of the detection technologies for a global enterprise, such as intrusion detection systems (IDS/IPS), web application firewalls (WAF), wireless security, anti-virus, etc.  To be successful in this role the individual must maintain an advanced level of understanding of the technologies involved with GSOC service delivery and troubleshooting to support our diverse customers. The individual will also be responsible for security research in order to stay current on information security threats and indicators, as well as independent research on the capabilities and features of various security technology. Must be a self-starter able to take project tasks from start to completion without direct supervision.   Skills Required:    Intrusion detection/prevention systems (IDS/IPS), anti-virus, web access firewall (WAF) administration, and administration experience in networking   Skills Preferred but Not Required:     SIEM technologies (such as ArcSight), log management, Python or PERL Development, firewall administration, proxy administration   Minimum Years of Relevant Experience:       5
+
+
+
+
+
+
+5-plus-years-experience-needed

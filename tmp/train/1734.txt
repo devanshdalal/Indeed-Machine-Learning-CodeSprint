@@ -1,0 +1,7 @@
+DevOps Engineer     A leading IT company is looking for a skilled DevOps Engineer that is passionate about doing things more efficiently every day. In this role, you can develop on many open source platforms and will have unmatched flexibility to use the toolsets of your choice to get the job done. We believe there are a few essentials to the role though and knowing bash will be critical as well as Python and basic SQL (of course). The Devops Engineer will be responsible for ensuring that all backups are done and no single-points-of-failure are present anywhere in the application stack. On-demand virtualization is important as well (for us AWS EC2, and RD2 would be ideal) and the ability to scale quickly will be important. Puppet and Fabric experience will be critical in order to work across many small distributed instances.      Requirements:  ·       Mission-critical database experience (distributed RDBMS and NoSQL)   ·       Performance Tuning experience at all levels of the application stack.   ·       Experience with setup of automated test infrastructures and experience helping developers integrate this into their work.   ·       Background with a variety of open source configuration management, and monitoring technologies (e.g., Graphite, StatsD, Sentry).
+
+
+
+
+
+

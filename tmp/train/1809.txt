@@ -1,0 +1,8 @@
+* Candidates must have 3+ years’ experience with web development languages, including Cold Fusion MX 6.0/7.0/8.0, CFCs, HTML/XHTML, Javascript, jQuery, and XML * Working knowledge of relational database design and development is a must (Experience with T-SQL is a plus). * Candidate must be an effective communicator, be well organized, and possess the ability to work in a fast paced environment. * Understanding of Object-Oriented frameworks (MVC, Coldbox experience is plus)
+
+
+
+
+
+
+2-4-years-experience-needed

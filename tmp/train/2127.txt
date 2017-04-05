@@ -1,0 +1,8 @@
+Start Date: Immediate Duration: 5 months Critical Skills: SQL Server 2012 / MDM MDM Subject Matter Expert and knowledge transfer Subject Matter Expert (SME) with technical depth in the MSFT Master Data Services (MDS) Product. For example, a consultant would be expected to describe best practices and/or methods for implementation of MDS functionality. (e.g. Hierarchy Implementation/Management, Change Data Capture, MDS modeling, etc.). This effort will be for Architectural Guidance and Assistance working at the customer’s direction - Review data from sources - Proof of concept, MDM using Excel add-in - Conceptual MDM data model - Conceptual design of hierarchy - Conceptual design of business rules - Planning for security & data governance - Planning for data consumption/distribution – using Subscription Views, or MDS WCF APIs - Planning and design for data discovery, landing, staging and entity-based staging (importing into MDM) - ETL development and model design (entities, attributes, relationships, etc.) - Environment planning and design - HA/DR, landing, staging, MDM environment (Databases), reporting environment - Detail design specifications - Development and implementation of MDM solution - Deployment - Support & maintenance Hourly Rate - $100.00 
+
+
+
+
+
+
+hourly-wage

@@ -1,0 +1,7 @@
+Job Title: Front End Developer Duration: 6+ months Location: NYC, NY   Qualifications: Knowledge of object-oriented Javascript, CSS(3), and HTML5, MVC, MV*, and templating languages. Experience with our tools of choice: jQuery, Javascript module pattern, LESS CSS framework, Freemarker, Selenium, JIRA, Test & Client Knowledge of, and able to discuss, JS & CSS performance issues. You know what a browser reflow is and what triggers it. Experience with and opinions on: web video; ad serving; responsive design; mobile web development; CSS sprites; SEO; e-commerce Photoshop skills. Python skills a plus, but not required, especially if you’re solid at Javascript. Java skills a plus, but not required   Responsibilities: Fast, clean front-end code fast to write, and fast-performing Writing, and testing, use cases for key features with product, IA, design, and other departments to influence feature design, with an eye toward usability and reusable development. Working with business stakeholders and project managers, and self-managing, to manage timelines and client expectations Assisting in back-end integration were a small team and work closely with the back end engineers Providing post-launch support for defect and problem resolution Involved in the conception, design, architecture, implementation, testing and deployment on multiple projects at various stages of their life-cycle Research, develop and propose new technologies to improve or benefit the system architecture Other duties, as needed
+
+
+
+
+
+

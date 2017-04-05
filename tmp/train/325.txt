@@ -1,0 +1,8 @@
+LONG TERM CONSULTING OPPORTUNITY    Responsible for the development, tuning and troubleshooting of    Oracle application code (Packages, Procedures, triggers, etc.) in    Cooperation with development and DBA teams    Responsibilities:    · PL/SQL and SQL tuning and troubleshooting    · Develop, implement, maintain and enforce SQL and PL/SQL    coding standards and best practices    · Create and maintain all necessary documentation    · Assist in database design and application development    Required Qualifications:    Minimum of 5 years of professional experience in Oracle development with    specific focus on:    *· PL/SQL and SQL tuning and troubleshooting*    · Excellent SQL tuning skills in Oracle9i and 10g environments    · Strong knowledge of Oracle monitoring tools and utilities (AWR, ASH,    ADDM, OEM Grid Control, etc.)    · Strong Working knowledge of Oracle PL/SQL    · Strong command of English language, both oral and written    · Excellent self-tasking and team work skills    Additional Qualifications:    Practical experience with one or more of the following preferred, but  not required:    · Practical experience with Perl and Perl DBI is a big plus    · Knowledge of e-Commerce systems    · Experience in Data Warehouse implementations    Education Requirements:    · Bachelor’s Degree or equivalent practical experience    Data Modeling/Architecture a plus    PLEASE LOCAL CANDIDATES ONLY
+
+
+
+
+
+
+bs-degree-needed 5-plus-years-experience-needed

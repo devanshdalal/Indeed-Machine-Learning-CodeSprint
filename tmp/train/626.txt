@@ -1,0 +1,8 @@
+Our Objective As an organization, we are committed to providing employees the opportunity to gain skills and knowledge, in order to fully develop their unique strengths. By doing this, we create an environment where employees have the ability to do what they do best - helping to create opportunity and security for all.   Join Our Organization  We are looking to add a Data Architect to our staff!   Apply your extensive experience with .NET, C#, SQL, T-SQL, data structures and large, clustered databases to: •Reverse engineer and document existing data structures •Architect, design and develop new applications and systems, from conceptualization, to implementation •Modify and create C# applications for complex data processes •Analyze and document data flows between systems •Actively develop and maintain collaborative relationships with technical and business stakeholders  •Collaborate with DBA’s to develop and maintain data standards across the enterprise •Collaborate with BA’s to gathering user requirements, analyzing business process flow, and collaborating with stokeholds    EDUCATION and/or EXPERIENCE:   •Bachelor’s Degree in Computer Science, related field or equivalent experience preferred
+
+
+
+
+
+
+bs-degree-needed

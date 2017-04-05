@@ -1,0 +1,7 @@
+We are in need of a consultant with strong skills in SDK Library Services  The client is looking to build a mobile SDK which can be used from various IDE’s like android studio or eclipse  The idea is to encapsulate functionality which can be re-used.  This is to create a library of functionality enclosed within an SDK. The SDK would contains header files, type libraries, simple utilities, sample code, and documentation. This would be used within appcelerator, worklight phonegap etc but we are not creating a native or cross platform app.   VIVA USA is an equal opportunity employer and is committed to maintaining a professional working environment that is free from discrimination and unlawful harassment. The Management, contractors, and staff of VIVA USA shall respect others without regard to race, sex, religion, age, color, creed, national or ethnic origin, physical, mental or sensory disability, marital status, sexual orientation, or status as a Vietnam-era or disabled veteran.    VIVA USA INC. 3601 Algonquin Road, Ste 425 Rolling Meadows, IL 60008 www.example.com
+
+
+
+
+
+

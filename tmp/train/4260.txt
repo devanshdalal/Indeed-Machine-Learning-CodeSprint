@@ -1,0 +1,8 @@
+PlanetHS is a student-life community that is controlled and moderated by schools. We focus on extracurricular activities with simplified, easy-to-use features that are contextualized to school needs. We are spreading fast and we need great developers that are ready to dive in and become a part of the excitement.   *Position Description:*  Until recently, a dedicated web application shop has handled our development. Now we are building an in-house development team and looking for just the right people to ensure a high level of quality and a great culture. Your responsibilities would include:  * Working with management to design and develop solutions for teachers, coaches, students, and parents of nearly 800 schools * Troubleshooting and extending existing functionality * Creating ad-hoc reports to support internal initiatives * Working closely with a small team   *Basic Qualifications:*  * Minimum 3 years of PHP, MySQL, & Apache experience * Experience with version control systems such as SVN or GIT * Ability to debug complex systems * Desire to take ownership and accept responsibility * An energetic, teamwork attitude * A passion for PHP and software development * You can explain, in detail, past projects you have designed and developed   *Outstanding Qualifications:*  * Strong understanding of object oriented principles and service oriented architectures * Team lead experience * Server operations management   *3 positions available.*
+
+
+
+
+
+
+2-4-years-experience-needed

@@ -1,0 +1,8 @@
+We are currently seeking a Programmer\\Application Developer for one of our Clients.    Responsibilities:  Work with custom legacy application and data to support current business requirements.  Assist with continuing n-tier framework design implementation  Assist with implementation of ERP software including integration with custom applications.  Assist with custom desktop application & database design, programming, and maintenance, including integrations with & customizations of commercial application.   Required Skills:  Strong knowledge of relational databases.  Proficient with SQL Server  .NET (C# and/or VB).  Object oriented design principles  Visual FoxPro   Desired Skills:  SalesLogix  SharePoint  Education:   A Bachelor's degree in Computer Science, Information Systems, or related technical field. An equivalent combination of education and experience will be considered. 
+
+
+
+
+
+
+bs-degree-needed

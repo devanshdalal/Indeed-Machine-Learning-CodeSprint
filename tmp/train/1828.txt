@@ -1,0 +1,8 @@
+Microsoft Package Installer Contract duraction:  6 - 9 months - possible extension.  REQUIRED SKILLS        (At a Glance)       Experience using source code control systems.      Experience with product licensing and signing.      Experience with releasing system software products involving Windows Services and drivers.      Understanding of MSI product versioning.      Knowledge of setup.exe packaging, merge modules, and patching.      Experiencing packaging for 32 and 64 bit product releases.      Ability to verify and debug installers.      Knowledge of packaging and releasing products targeting Windows XP, Vista, 7, 8 as well as Server   BELOW SKILLS ARE A PLUS       Knowledge of Windows Logo requirements.      Experience with Subversion.         Visual Studio 2008, 2010, 2012      Working knowledge of C/C++     Ability to create custom install actions in C/C++     Java     Subversion     MSSQL Database experience     Maven / MSBUILD     Experience with MSI chaining     InstallScript
+
+
+
+
+
+
+licence-needed

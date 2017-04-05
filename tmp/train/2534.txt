@@ -1,0 +1,7 @@
+Long term contract position for a .Net Developer for one of our premier clients in Newtown, PA.  The selected candidate will be responsible for the maintenance and support of existing systems. Participate in planning, design, programming, implementation and documentation of enhancements to existing systems as well as maintenance of software programs for the organization. Software programs include but are not limited to www.example.com websites with both SQL Server and Oracle back-ends, XML web services, MVC and Win Forms utilizing VB.Net, and 3-tier VB applications with Oracle backend. Knowledge of Javascript, Jquery, AJAX a plus.
+
+
+
+
+
+

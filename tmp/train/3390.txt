@@ -1,0 +1,8 @@
+IT Strategy Group LLC is currently seeking out and recruiting a Network Firewall Analyst for our clients here in Kansas City and the surrounding area.    Job Requirements  Firewall Analyst Long Term On-Going Contract Initial Duration: 6 Months  This is a contracting engagement for an on-going 6 month agreement.  This agreement will be renewed every 6 months.  W2/Employee Pay Rate: $28/Hour   The Firewall Analyst will be responsible for:  Network, Firewall, Web Proxy, Authentication (RSA) Troubleshooting Ticket management for Firewall and Web Proxy Requests Ticket submission for Change Requests Information Security Engineering team support Internal Security Audit Support Documentation of process and daily activities  Metrics reporting  Rotating On-Call for emergency support and implementations during change window (emergency’s could come at any time)  Ability to open and work with vendor support for advanced issues (ex. Cisco TAC, Firemon, Fishnet Support, etc)  Ability to review SIEM logs to help with troubleshooting efforts  Assist in assuring that monitoring remain active on all Tier 1 devices  Technology Specific Knowledge: * Network Firewall/VPN Management (Checkpoint & Cisco)  * Personal Firewall Management (Symantec Endpoint Protection)  * URL Filtering & Web Proxy Support (Bluecoat)  * URL Filtering (OpenDNS) * RSA SecureID Management  General Skills Required: * Strong firewall change experience (minimum of 2 years with preferred vendor technology)  * Strong IP Networking * System Administration experience * System Hardening & Security Best Practice knowledge  Desired Skills: * Experience with virtualization technologies (Computing Platform & Network) * Experience with IDS/IPS tuning and Incident Response
+
+
+
+
+
+
+hourly-wage

@@ -1,0 +1,8 @@
+Responsibilities:  Work with internal departments in the development of a company wide database  to tie departmental data into a centralized, manageable database Design tools to assist in the management of the database environment Create front end for users to be able to easily interact with for data entry Train users on use of the database Creation of standard and as needed reports and queries for users Develop and execute methodology for the ongoing assessment of database performance Make suggestions and recommendations in order to improve the overall data flow process Analyze data for inconsistencies  Provide general maintenance and upkeep to the database Provide extensive documentation on the design, creation, and use of the database  Minimum Requirements:  Bachelors or Associates Degree in computer related field 2+ years of database development experience US Citizen or permanent resident is required for this position  Skill Requirements: Demonstrated experience with SQL and SQL Server 2005-2008 Development Knowledge and implementation of database securities Ability to multi-task and prioritize Analytical and problem-solving skills Prove ability to work as a productive team member as well as on solo projects A solid understanding of the principles of good database design Familiar with handling of data in relation to ITAR and EAR Awareness of new and emerging technologies and the potential applications Experience working in manufacturing environments is a plus Database related certifications are a plus
+
+
+
+
+
+
+bs-degree-needed 2-4-years-experience-needed

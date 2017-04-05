@@ -1,0 +1,7 @@
+Job Description  We're looking for a software engineer to help us build a system that processes tens of thousands of records on a weekly basis, to provide complex analytics about shipping and logistics to small and medium-size companies. This position is for a problem solver with a broad background in computer science fundamentals, someone who is smart and wants to take on significant responsibilities and challenges.  Skills & Requirements  We are using Ruby / Rails, MySQL, Linux (Ubuntu), Amazon AWS (EC2, EBS, S3).  About 71lbs  71lbs, is a venture-backed start-up building software that helps businesses optimize their shipping and logistics. We offer a very competitive compensation package that includes stock options, together with a relaxed environment with smart, fun, and passionate co-workers. Our offices are in Davie, FL near Nova University.   No remote.
+
+
+
+
+
+

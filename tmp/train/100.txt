@@ -1,0 +1,8 @@
+Digital Foundation Corporation has an opening for a an experience Business Objects  Developer with experience in developing dashboards and creating custom reports.   The candidate will: * Analyze report requests to the appropriate design needed to meet the business requirements. * Create reports and test against application data prior to delivering to QA. * Create and Update BO Universes to meet reporting requirements. * Perform thorough data analysis to ensure that reports meet their business objectives. * Document report specifications as required. * Obtain a detailed understanding of the business data used to feed the data warehouse. * Assist other staff in the use of the Business Objects toolset. * Schedule reports to run in batch. * Perform data quality and error resolution analysis. Skills: * Microsoft SQL Server (Query Analyzer and Enterprise Manager) * Business Objects Universe Design * Business Objects Report Creation * Business Objects Dashboard Manager * Microsoft Excel * Windows ,NT and XP, VISTA, MS-DOS  Qualifications: * Excellent communication skills and ability to work with end users in gathering report requirements and in assisting with testing. * Strong analytical skills used for investigating/explaining data discrepancies in reports. * Strong knowledge of relational database design concepts, and the ability to develop stored procedures.  * SQL Server preferred. * Knowledge of Business Objects server administration and security is a plus * BS/BA required. 10+ years experience.   MUST BE A U.S. CITIZEN and be able to pass an government background check. 
+
+
+
+
+
+
+5-plus-years-experience-needed bs-degree-needed

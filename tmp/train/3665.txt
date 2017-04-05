@@ -1,0 +1,8 @@
+Must have 8+ years of experience in Java very good pay:  $55/hr US Citizenship Required?  No    Minimum 8 years in Java/Java EE, HTML, CSS, JavaScript Minimum 5 years in Hibernate, Oracle 10g/11g databases and PL/SQL Minimum 5 years in system, communication and user documentation Minimum 4 years with web architecture management Minimum 3 years in project plan management Minimum 3 years in JBoss and MyEclipse/Eclipse Advanced proficiency with all MS Office applications and Microsoft Visio. Strong written and communication skills.  Experience in reviewing user work requests, analyze testing requirements, develop testing specifications and coordinate testing in multiple environments. Review and validate the development of test data and scenarios incorporating business rules. Validate and implement test procedures for applications used.  A. Extensive expertise with Java EE software engineering techniques, especially JEE authorization/authentication and session management specifications: JSP, JavaScript, CSS, Spring, Hibernate (utilizing Annotations), JBoss, MyEclipse, Oracle database backend B. Knowledge of Agile process and development standards. C. Knowledge & experience in web architecture. D. Knowledge of state & federal regulations & requirements in regards to the public health statistics and information systems  Bachelor’s degree in Information Technology or related field.
+
+
+
+
+
+
+bs-degree-needed 5-plus-years-experience-needed hourly-wage

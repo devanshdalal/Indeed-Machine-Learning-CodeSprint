@@ -1,0 +1,7 @@
+**Candidate should be able to work for any employer without the need for sponsorship**  Our client, a NYC based leading content and technology solutions company to the exciting style, fashion and design industry is looking for a Full-Time/Permanent JavaScript developer who has:  1. Advanced understanding and knowledge of JavaScript and JQuery (a must) 2. Familiar with some of the new and popular frameworks like  AngularJS Coffeescript RequireJS LESS Backbone nodeJS  Experience with the following is a huge plus  LAMP stack (Linux, Apache, MySQL and PHP) GIT SVN  Top 3 Reasons to Work with our Client  They are an industry leader with a tremendous amount of growth and career advancement Opportunity to use and expand your current skill set while learning new platforms Work with a very talented team of engineers What You Will Be Doing  Coding geek, who loves to dive in and find your way through complex program/application Work directly with our management teams and development teams to improve and develop the existing platform Work in an agile development environment
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+Need a ETL developer with heavy ab initio experience. Strong unix and database knowledge required. Initial 6 months initial contract and extendable for long term.   Responsibility: •              Scope, plan, prioritize, and manage multiple tasks and projects •              Provides primary level support overall to systems and teams as necessary to ensure proper and efficient use of systems •              Ability to analyze and design methodologies for full system development life cycles. Ability to analyze and design data conversions and integration tools, processes, and practices •              Creating high performance and highly scalable ETL designs •              Establishing and implementing ETL best practices and guidelines •              Building the ETL process to meet product/project specific requirements •              Creating test plans and unit test cases •              Provide User Acceptance Testing support for the ETL process •              Deploy ETL Process in production •              Provide production support for the data mart environment •              Create and maintain Technical Design document, ETL Mappings and Production Support & Administration document. email your resume to info at stratiotech.com No Thrid parties please
+
+
+
+
+
+

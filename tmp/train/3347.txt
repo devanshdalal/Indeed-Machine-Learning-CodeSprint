@@ -1,0 +1,8 @@
+Engineer will work with others in modeling and simulation of first-of-a-kind dynamic systems. Systems supported include spacecraft, aircraft, and underwater vehicles, both supervised and autonomous. A working knowledge of simulation, dynamics, and control systems is necessary. A working knowledge of MATLAB/Simulink, 3D graphics, and C/C++ software development in Unix and Windows environments is desirable. The individual should be a highly motivated, self-starter with willingness to learn and participate in an exciting team environment. Excellent written and oral communication skills at a technical level are required.    BS or MS in relevant engineering discipline: Aero/Astro, Mechanical, Electrical, or Computer Science. Hands on engineering experience through internships are a plus.    Applicants selected for this position will be subject to a government security investigation and must meet eligibility requirements for access to classified information to get a security clearance.
+
+
+
+
+
+
+bs-degree-needed

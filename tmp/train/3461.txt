@@ -1,0 +1,7 @@
+iOS Engineer  We are looking for an iOS engineer to contribute towards making our app even better. You will be responsible for defining and implementing new features, improving performance, and ensuring an easy-to-use, silky-smooth and beautiful user interface. You will be working in a small team where your fantastic ideas and talents will be greatly impactful and recognized. If you chose iOS development not because it is a popular platform, but because it is a platform you love and want to code for, we want to talk to you!  Responsibilities Architect and implement features for our iOS app Collaborate with our design and product team to bring their user experience designs to life Write code that will touch millions of users every day  Qualifications Thorough understanding of object-oriented programming concepts Familiarity with agile software development practices like Scrum or Kanban Extensive knowledge of Objective-C and the UIKit framework Basic understanding of C pointers, manual memory management (malloc and free) and pure C programming paradigms Have one or multiple apps in the App Store, either personal projects or apps worked on previously as a part of other companies Relentless attention to detail especially when designing UI elements and workflows  Pluses Familiar with CFNetwork and/or ASIHTTPRequest beyond simple request/response handling Concurrent Core Data, especially the recent additions (parent/child contexts) GitHub/BitBucket account with examples of recent iOS related projects
+
+
+
+
+
+

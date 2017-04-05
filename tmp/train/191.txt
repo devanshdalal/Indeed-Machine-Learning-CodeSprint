@@ -1,0 +1,8 @@
+The .Net Developer designs, develops, implements and supports ASP.NET web applications to fulfill the business needs ACB, its clients and customers. ACB is a professional agency uniquely qualified to address the Co-op/Trade Promotion, Ad Tracking and Marketing Services needs of manufacturers.   *DUTIES:* * Design, develop, and implement ASP.NET (C#) code. * Perform other duties as assigned by IT management. * Follow IT policies and procedures for system design, architecture, application quality, and team environment.   *QUALIFICATIONS:*  * At least 3 years of professional experience in several of the following technologies used at ACB: ASP.NET C#, HTML, CSS, javascript and jquery and T-SQL. * Must be able to research and problem solve trouble tickets existing and new development projects.  * Knowledge of web services and LINQ, WCF/WCF RIA services, and advanced OO design patterns is a plus.  * Ability to learn new technologies in an aggressive timeline is desired.  *Local Candidates Only  *ESSENTIAL RESPONSIBILITIES:* * Report project or application status IT management. * Follow IT policies and procedures for system design, architecture, application quality, and team environment.
+
+
+
+
+
+
+2-4-years-experience-needed

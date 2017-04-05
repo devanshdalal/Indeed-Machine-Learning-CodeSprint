@@ -1,0 +1,8 @@
+Position Title :  .NET Web Developer (ASP.Net, C#, VB.NET, SQL Server)    Description of MainStreet Commerce :  Headquartered in Deerfield Beach, Florida, MainStreet is a progressive software company with nationally recognized customers across the U.S.   ( www.example.com )    BusinessFlow, MainStreet's enterprise e-business software, is built on the .NET 3.5 framework to leverage Web 2.0 technologies (SOA, AJAX, Web Services). MainStreet offers engineers the opportunity to work with leading enterprise technology and be a part of a great development team.    Responsibilities :  * Develop web sites and applications using Microsoft .NET web technologies.  * Develop web sites and applications adhering to designs supporting defined business requirements.   * Follow standards based coding concepts, practices, and procedures.   * Work independently and/or in a team environment.     Requirements :  * ASP.NET 3.5 (C# or VB.NET), SQL 2008 & T-SQL. HTML, CSS, JavaScript, and XML.  * Design and implementation of Web Services a plus.  * Must have strong verbal and written communication skills.   * Bachelor's degree in Computer Science or equivalent work experience.  * Authorized to work in the U.S.    Desired Characteristics :  * Strong engineer with great creative problem solving skills.  * Smart developer focused on results.  * Organized with an attention to detail.
+
+
+
+
+
+
+bs-degree-needed

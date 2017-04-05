@@ -1,0 +1,7 @@
+This individual will work as part of a small .Net development team. The candidate will participate in all aspects of analysis, design, development, testing, and implementation. Candidate will participate in joint requirement definition (JRD) sessions to define detailed user requirements. Candidates will need to translate the user requirements into the high-level and detailed application design. Setup development and production environments will be part of the responsibilities. They must be a team player and be able to develop an excellent rapport with clients.  Required Skills  •ASP.NET MVC 3 or above •Visual Studio 2010 (VS 2012 is a plus) •Razor View Engine Plus •C# •Jquery/Javascript •HTML (HTML5 is a plus) •SQL Server •Candidate must have strong communication skills. •do need to have MVC 3/Razor experience. Its an ongoing project doing .NET Development with heavy C#, javascript, asp.net and MVC3/Razor.   Please email me back with your updated resume to example@example.com or call me at  XXX 
+
+
+
+
+
+

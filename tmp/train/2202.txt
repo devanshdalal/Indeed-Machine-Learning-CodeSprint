@@ -1,0 +1,8 @@
+About us: 20 years of continuous innovation and success to become the premier developer of performance analysis, automated operations and systems management software tools in support of mission critical applications on HP NonStop servers. We are located in Los Angeles near UCLA, and our customers are global blue chip companies in various industries.  Job Description: Using Agile project disciplines, work with a team of highly educated and talented developers to deliver high quality and innovative software solutions. Develop software using the latest technologies and deploy software across multiple platforms; Windows, Linux and various HP operating environments. Innovate, design and develop solutions and tools for mission critical systems. Opportunity to grow and assume technical ownership and responsibilities of software products. Receive a competitive salary, and participate in our medical, dental & vision insurance offerings, as well as 401k plan.  Minimum Requirements: • Bachelor Degree or higher in Computer Science or equivalent. • Minimum 3 years experience of programming experience required. • Minimum 3 years experience with industry standard tools and languages (i.e.Java, C, .Net, SQL database) required.  Additional Skills and Requirements: • Have a creative mind and a drive to succeed. • Quality and professionalism are important to you. • Experience developing Windows web based software. • A team player with excellent written and oral communication skills. • Take pride in your work, accomplishments and interpersonal skills. • Experience with HP NonStop and Linux servers is a plus. • Experience with JUnit and NUnit is a plus.
+
+
+
+
+
+
+bs-degree-needed 2-4-years-experience-needed

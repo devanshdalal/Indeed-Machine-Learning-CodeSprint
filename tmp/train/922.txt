@@ -1,0 +1,8 @@
+The candidate selected for this contract position will work out of the Chelsea Water/Wastewater facility and provide programmable logic controller (PLC) and Human Machine Interface (HMI) software programming support. Some of the essential duties are participating in the installation, maintenance and monitoring of the Mass. Water Resources Authority's wide area Supervisory Control and Data Acquisition (SCADA) system as well as reviewing and updating the PLC ladder logic and HMI software.     QUALIFICATIONS:   Education/Experience:   BS Degree in Electronic/Electrical Engineering or equivalent     Special Requirements:   Four years experience in ladder logic and HMI programming in the water/wastewater industry is preferred. Allen Bradley SLC or ControlLogix, and GE iFIX Software experience is required. Thorough knowledge of networking, Windows XP and Windows 7 is expected.  Valid Massachusetts Class D driver's license.     Applications are available on line at www.example.com .   Mass. Water Resources Authority is an Equal Opportunity/Affirmative Action Employer   M/F/D/V       Location: Chelsea, MA.   Compensation: Salary range: $30.82 - $41.52 per hour / 20- 40 hours per week   
+
+
+
+
+
+
+bs-degree-needed 2-4-years-experience-needed

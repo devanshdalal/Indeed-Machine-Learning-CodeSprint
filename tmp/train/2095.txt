@@ -1,0 +1,8 @@
+Our client has an immediate opening supporting the DoD in Ft. Meade, MD. The mission is in support of the warfighter, and will be instrumental in the development and formulation of data and configuration management. Be responsible for working with the customer in the design and development of computer systems specs that address business requirements and that fit with customer system architecture standards. Other duties inclued:  Analyze systems and procedures to refine formulation. Ability to perform Gap analysis of data Ability to validate Atrium data with current databases sources(ADM, etc.) Familiarity and ability to analyze the BMC/ITSM Atrium database schema Ability to create reort function for given requirements. Able to take requirements and map to CI's and attributes and validate data.  Required Skills: Significant experience administering Windows, Linux, HP-UX, AIX and/or Solaris. Experience with VMWare ESX servers Ability to obtain a Secret clearance.  Desired Skills: Experience with Sun Logical Domain Knowledge of SAN architecture Knowledge of Oracle DBs and their interaction with host OS.  Education: Bachelors degree in computer science or related discipline.  Position has the option to become a prime contractor employee after six months, and includes competitive benefits package.  Salary to $90,000.
+
+
+
+
+
+
+salary bs-degree-needed
