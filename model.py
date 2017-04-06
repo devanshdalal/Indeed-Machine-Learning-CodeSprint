@@ -271,15 +271,19 @@ def extract_features(text):
   ld = len(desc)
 
   # currency terms
+  currency_features = [0,30*1000,50*1000]
   currency = re.findall( r'[\$]?[ ]*[0-9,.]+k?[\$]?' ,text)
   for j,xx in enumerate(currency):
     xx = re.sub('[,$]', '', xx)
     xx = re.sub('[k]', '000', xx)
     xx = re.sub('[ ]', '', xx)
     currency[j] = int(xx)
-  sorted(currency)
-  
-
+  currency=sorted(filter(lambda yy: yy>=5 and yy<10**5,currency) )
+  if len(currency)>0:
+    currency_features[-1]=currency[-1]
+    currency_features[0]=currency[0]
+    currency_features[1]=sum(currency)*1.0/len(currency)
+  # feature_vec.append(currency_features)
 
   # Datetime 
   def interval():
@@ -314,11 +318,12 @@ def extract_features(text):
 
   # extract normalized features
   text = normalize_text(text)
-  jd_dict = map( stemmer.stem, ['salary','wage', 'full', 'part', 'master','bachelor','phd','associate','licence','education','experience','hour','plus',
+  jd_dict = map( stemmer.stem, ['salary','wage', 'full', 'part', 'master','bachelor','bs','ms','phd','associate','licence','education','experience','hour','plus',
                   'supervise','manage','lead','mentor','moniter','pay'])
   for xx in jd_dict:
     feature_vec.append(text.count(xx))
   feature_vec+=feature_experience(text,5)
+  print(len(feature_vec))
   return feature_vec
 
 
