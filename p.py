@@ -239,24 +239,13 @@ def mlpredict(s):
 #######################################################################################################################
 
 def mlpredict2(s):
-	from model import learn_simple
+	from model import learn_simple,compress_labels,get_text_labels
 	descriptions,test_descriptions = [],[]
 	labels = []
 	for i,x in enumerate(train_data):
 		descriptions.append(x[1])
 		y_labels = [(1 if i in x[0].split(' ') else 0) for i in all_tags]
-		y_converted = [0]*5
-		if y_labels[0]==1 or y_labels[1]==1:
-			y_converted[0]=1+y_labels[:2].index(1)
-		if y_labels[2]==1 or y_labels[3]==1:
-			y_converted[1]=1+y_labels[2:4].index(1)
-		if y_labels[4]==1 or y_labels[5]==1 or y_labels[6]==1 or y_labels[7]==1:
-			y_converted[2]=1+y_labels[4:8].index(1)
-		if y_labels[8]==1 or y_labels[9]==1 or y_labels[10]==1 :
-			y_converted[3]=1+y_labels[8:11].index(1)
-		if y_labels[11]==1:
-			y_converted[4]=1
-		labels.append(y_converted)
+		labels.append(compress_labels(y_labels))
 
 
 	if s!=1:
@@ -269,17 +258,7 @@ def mlpredict2(s):
 		predictions = learn_simple(np.array(descriptions),np.array(labels),np.array(test_descriptions),np.array([]))
 		submission = [[] for i in test_data]
 		for i,x in enumerate(predictions):
-			res_labels = []
-			if x[0]>0:
-				res_labels.append(all_tags[x[0]-1])
-			if x[1]>0:
-				res_labels.append(all_tags[x[1]+1])
-			if x[2]>0:
-				res_labels.append(all_tags[x[2]+3])
-			if x[3]>0:
-				res_labels.append(all_tags[x[3]+7])
-			if x[4]>0:
-				res_labels.append(all_tags[11])
+			res_labels = get_text_labels(x)
 			submission[i]=res_labels
 		create_submission(submission) 
 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import re,sys,os
+import re,sys,os,time
 import numpy as np
 from sklearn.naive_bayes import GaussianNB,MultinomialNB,BernoulliNB
 from sklearn.metrics import f1_score
@@ -7,8 +7,8 @@ from sklearn.feature_extraction.text import CountVectorizer,HashingVectorizer,Tf
 from sklearn import svm,linear_model,ensemble
 from sklearn.multioutput import MultiOutputClassifier
 from collections import Counter
-from nltk.stem.wordnet import WordNetLemmatizer
-WNL = WordNetLemmatizer()
+from nltk.stem.porter import *
+stemmer = PorterStemmer()
 
 #assigning predictor and target variables
 
@@ -42,7 +42,7 @@ def normalize_text(desc):
   desc = re.sub(r'((https?://[^\s]+)|(www\.[^\s]+))','LINK',desc)
   # 
   desc = re.findall(r"[\w']+", desc)
-  desc = ' '.join( map( lambda x: str( WNL.lemmatize(x) ) ,desc) )
+  desc = ' '.join( map( stemmer.stem ,desc) )
   # print(desc)
   # exit(0)
   
@@ -138,38 +138,6 @@ def find_experience(desc,sr):
       return all_tags[10]
   return ''
 
-def find_supervision(desc,sr):
-  ld = len(desc)
-  # print(desc)
-  key_words = ['supervis','manag'] #['experience','year']
-  semi = ['inspect','moniter','manag','responsibl']
-  values = []
-  confidence = 0
-  desc = re.findall(r"[\w']+", desc)
-  for trigger in key_words:
-    for i,u in enumerate(desc):
-      if trigger in u:
-        consider = desc[max(i-sr,0):min(i+sr,ld-1)]
-        for j,z in enumerate(consider):
-          for semi_words in semi:
-            if semi_words in z:
-              confidence+=1
-          matchObj = re.match( r'\d+(\+)?', z, re.M|re.I)
-          if matchObj:
-            values.append(matchObj.group())
-          if z in numbers:
-            values.append(numbers.index(z)+1)
-  values = list(set( filter(lambda x: x>0 and x<20, map(int,values) ) ))
-  if confidence>0 and len(values)>0:
-    exp = Counter(values).most_common(1)[0][0]
-    if exp<2:
-      return all_tags[8]
-    elif exp<5:
-      return all_tags[9]
-    else:
-      return all_tags[10]
-  return ''
-
 def find_job_timings(desc,sr,key_words,semi,conf):
   ld = len(desc)
   # print(desc)
@@ -198,7 +166,6 @@ def text_extract(desc,labels):
   for i,x in enumerate(desc):
     # exp = find_experience(x,6)
     # test_labels[i].append(exp)
-
     if find_job_timings(x,4,['per','hour'],['dollar','wage','earn','week','day','hr'],2):
       test_labels[i].append(all_tags[2])
     elif find_job_timings(x,6,['per','year','annum'],['salary','earn','dollar'],1):
@@ -217,34 +184,168 @@ def text_extract(desc,labels):
 
 ##############################################################################################################################
 
+def compress_labels(y_labels):
+  y_converted = [0]*5
+  if y_labels[0]==1 or y_labels[1]==1:
+    y_converted[0]=1+y_labels[:2].index(1)
+  if y_labels[2]==1 or y_labels[3]==1:
+    y_converted[1]=1+y_labels[2:4].index(1)
+  if y_labels[4]==1 or y_labels[5]==1 or y_labels[6]==1 or y_labels[7]==1:
+    y_converted[2]=1+y_labels[4:8].index(1)
+  if y_labels[8]==1 or y_labels[9]==1 or y_labels[10]==1 :
+    y_converted[3]=1+y_labels[8:11].index(1)
+  if y_labels[11]==1:
+    y_converted[4]=1
+  return y_converted
+
+def expand_labels(x):
+  res_labels = [0]*n_tags
+  if x[0]>0:
+    res_labels[x[0]-1]=1
+  if x[1]>0:
+    res_labels[x[1]+1]=1
+  if x[2]>0:
+    res_labels[x[2]+3]=1
+  if x[3]>0:
+    res_labels[x[3]+7]=1
+  if x[4]>0:
+    res_labels[11]=1
+  return res_labels
+
+def get_text_labels(x):
+  res_labels = []
+  if len(x)>5:
+    x = compress_labels(x)
+  if x[0]>0:
+    res_labels.append(all_tags[x[0]-1])
+  if x[1]>0:
+    res_labels.append(all_tags[x[1]+1])
+  if x[2]>0:
+    res_labels.append(all_tags[x[2]+3])
+  if x[3]>0:
+    res_labels.append(all_tags[x[3]+7])
+  if x[4]>0:
+    res_labels.append(all_tags[11])
+  return res_labels
+
+def isTimeFormat(input):
+    try:
+        time.strptime(input, '%H:%M')
+        return True
+    except ValueError:
+        return False
+
+def feature_experience(desc,sr):
+  ld = len(desc)
+  # print(desc)
+  key_words = ['experience'] #['experience','year']
+  semi = ['year','minimum','work']
+  values = []
+  confidence = 0
+  desc = re.findall(r"[\w']+", desc)
+  for trigger in key_words:
+    for i,u in enumerate(desc):
+      if trigger in u:
+        consider = desc[max(i-sr,0):min(i+sr,ld-1)]
+        for j,z in enumerate(consider):
+          for semi_words in semi:
+            if semi_words in z:
+              confidence+=1
+          matchObj = re.match( r'\d+(\+)?', z, re.M|re.I)
+          if matchObj:
+            values.append(matchObj.group())
+          if z in numbers:
+            values.append(numbers.index(z)+1)
+  values = sorted(list(set( filter(lambda x: x>0 and x<20, map(int,values) ) )))
+  if confidence>0 and len(values)>0:
+    exp = Counter(values).most_common(1)[0][0]
+    return [exp,values[-1],values[0]]
+    #  mode, largest, smallest
+  return [0,0,0]
+
 def extract_features(text):
+
+  feature_vec = []
   text = text.lower()
-  r=re.search(ur'([£\$€])(\d+(?:\.\d{2})?)', text)
-  if r: 
-    print('r',r.groups())
+  desc = list(map(lambda xx: xx.strip(' .,?!*'),text.split()))
+  ld = len(desc)
+
+  # currency terms
+  currency = re.findall( r'[\$]?[ ]*[0-9,.]+k?[\$]?' ,text)
+  for j,xx in enumerate(currency):
+    xx = re.sub('[,$]', '', xx)
+    xx = re.sub('[k]', '000', xx)
+    xx = re.sub('[ ]', '', xx)
+    currency[j] = int(xx)
+  sorted(currency)
+  
+
+
+  # Datetime 
+  def interval():
+    import parsedatetime
+    p = parsedatetime.Calendar()
+    max_hr,min_hr=0,24
+    for i,xx in enumerate(desc):
+      if(isTimeFormat(xx) or p.parse(xx)[1]>=1):
+        s=''.join(desc[max(0,i-1):min(i+2,ld)])
+        tm, status = p.parse(s)
+        if status>=2:
+          if tm.tm_hour<min_hr:
+            min_hr = tm.tm_hour
+          elif tm.tm_hour>max_hr:
+            max_hr = tm.tm_hour
+    if min_hr>max_hr:
+      return 8
+    else:
+      return max_hr - min_hr
+  feature_vec.append(interval())
+
+  if find_job_timings(text,4,['per','hour'],['dollar','wage','earn','week','day','hr'],2):
+    feature_vec.append(1)
+  else:
+    feature_vec.append(0)
+
+  if find_job_timings(text,6,['per','year','annum'],['salary','earn','dollar'],1):
+    feature_vec.append(1)
+  else:
+    feature_vec.append(0)
+
+
+  # extract normalized features
+  text = normalize_text(text)
+  jd_dict = map( stemmer.stem, ['salary','wage', 'full', 'part', 'master','bachelor','phd','associate','licence','education','experience','hour','plus',
+                  'supervise','manage','lead','mentor','moniter','pay'])
+  for xx in jd_dict:
+    feature_vec.append(text.count(xx))
+  feature_vec+=feature_experience(text,5)
+  return feature_vec
+
 
 def learn_simple(desc,labels,test_desc,test_labels):
   desc = list( map( lambda x: normalize_text(x), desc) )
   test_desc= list(map( lambda x: normalize_text(x), test_desc))
 
+  train_vectors, test_vectors = [], []
   for x in desc:
-    extract_features(x)
+    train_vectors.append( extract_features(x) )
+  for x in test_desc:
+    test_vectors.append( extract_features(x) )
   logreg = linear_model.LogisticRegression()
-  # logreg.fit(train_vectors, labels)
+  multi_target_clf = MultiOutputClassifier(logreg, n_jobs=-1)
+  multi_target_clf.fit(train_vectors, labels)
 
+  if len(test_labels)!=0:
+    print('AccuracyLogRegression',multi_target_clf.score(test_vectors,test_labels))
+    Z = multi_target_clf.predict(test_vectors)
+    print('f1_score',f1_score( map(lambda x:x[-1],test_labels) , map(lambda x:x[-1],Z), average='macro' ) )
+    use_list = [0]*n_tags
+    use_list[8]=use_list[9]=use_list[10]=1
+    print('f1_score2',score( map(get_text_labels,test_labels) , map(get_text_labels,Z) ) )
+    print( list(map(lambda x:x[-1],test_labels)) , list(map(lambda x:x[-1],Z)) )
 
-  # if len(test_labels)!=0:
-    # print('AccuracyLogRegression',multi_target_clf.score(test_vectors,test_labels))
-    # Z = multi_target_clf.predict(test_vectors)
-    # print('f1_score',f1_score( map(lambda x:x[-1],test_labels) , map(lambda x:x[-1],Z), average='macro' ) )
-    # use_list = [0]*n_tags
-    # use_list[11]=1
-    # print('f1_score2',score( map(lambda x: all_tags[11] if x[-1]==1 else '',test_labels) , 
-    #   map(lambda x: all_tags[11] if x[-1]==1 else '',Z),use_list ) )
-    # print( list(map(lambda x:x[-1],test_labels)) , list(map(lambda x:x[-1],Z)) )
-
-  # else:
-    # test_labels = multi_target_clf.predict(test_vectors)
+  else:
+    test_labels = multi_target_clf.predict(test_vectors)
   return test_labels
 
 
@@ -265,5 +366,3 @@ def prepare_manual(test_lines,train_lines):
     train_lines[i][1].replace('•','\n')
     train_lines[i][1].replace('*','\n')
     open('tmp/train/'+ str(i+2)+'.txt','w+').write(train_lines[i][1]+'\n\n\n\n\n\n\n'+train_lines[i][0])
-
-
