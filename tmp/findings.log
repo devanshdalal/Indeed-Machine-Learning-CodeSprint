@@ -1,0 +1,56 @@
+('len desc', 3937)
+('using list', [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 438)
+(54, 31, 72, 719, 'precision', 0.6352941176470588, 'recall', 0.42857142857142855)
+('f1_score2', 0.5118483412322274)
+('using list', [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 438)
+(82, 45, 49, 700, 'precision', 0.6456692913385826, 'recall', 0.6259541984732825)
+('f1_score2', 0.6356589147286822)
+('using list', [0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0], 438)
+(51, 27, 86, 1588, 'precision', 0.6538461538461539, 'recall', 0.3722627737226277)
+('f1_score2', 0.4744186046511628)
+('using list', [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0], 438)
+(114, 36, 55, 1109, 'precision', 0.76, 'recall', 0.6745562130177515)
+('f1_score2', 0.7147335423197492)
+('using list', [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], 438)
+(34, 15, 30, 359, 'precision', 0.6938775510204082, 'recall', 0.53125)
+('f1_score2', 0.6017699115044248)
+('using list', [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 438)
+(335, 154, 292, 4475, 'precision', 0.6850715746421268, 'recall', 0.5342902711323764)
+('f1_score2', 0.600358422939068)
+
+
+experi
+(u'experi', 27328), (u'work', 12241), (u'skill', 10895), (u'requir', 9857), (u'manag', 8683), (u'abil', 8545), (u'year', 7965), (u'must', 6715), (u'develop', 6357), (u'commun', 5928), (u'includ', 5051), (u'knowledg', 4863), (u'prefer', 4839), (u'excel', 4668), (u'servic', 4521), (u'strong', 4352), (u'team', 4303), (u'custom', 4259), (u'posit', 4032), (u'sale', 3919)
+
+full
+[(u'work', 2173), (u'experi', 2090), (u'full', 1920), (u'requir', 1536), (u'posit', 1461), (u'manag', 1448), (u'time', 1437), (u'skill', 1344), (u'servic', 1256), (u'includ', 1107), (u'year', 1038), (u'abil', 1030), (u'sale', 957), (u'custom', 955), (u'commun', 926), (u'provid', 915), (u'team', 832), (u'develop', 811), (u'compani', 788), (u'benefit', 758)]
+
+
+part
+[(u'work', 2395), (u'part', 2239), (u'experi', 1994), (u'requir', 1650), (u'skill', 1404), (u'time', 1328), (u'manag', 1248),o (u'abil', 1190), (u'posit', 1151), (u'servic', 1132), (u'custom', 1089), (u'team', 1080), (u'commun', 962), (u'includ', 942), (u'year', 834), (u'provid', 816), (u'develop', 810), (u'product', 747), (u'job', 737), (u'sale', 736)]
+
+
+qualif
+[(u'experi', 2394), (u'work', 1701), (u'skill', 1655), (u'abil', 1463), (u'requir', 1446), (u'qualif', 1301), (u'manag', 1064), (u'year', 1020), (u'commun', 872), (u'excel', 712), (u'prefer', 710), (u'includ', 671), (u'knowledg', 658), (u'servic', 654), (u'perform', 628), (u'strong', 615), (u'develop', 588), (u'custom', 580), (u'team', 559), (u'posit', 551), (u'degre', 539), (u'environ', 526), (u'abl', 498), (u'job', 469), (u'project', 467), (u'applic', 446), (u'sale', 432), (u'time', 427), (u'provid', 400), (u'busi', 398), (u'educ', 398), (u'offic', 396), (u'pleas', 395), (u'program', 387), (u'minimum', 386), (u'relat', 384), (u'meet', 384), (u'or', 381), (u'compani', 377), (u'system', 374), (u'and', 372), (u'5', 369), (u'employe', 369), (u'product', 368), (u'2', 362), (u'written', 356), (u'respons', 354), (u'3', 354), (u'comput', 343), (u'maintain', 342)]
+
+
+edu
+[(u'educ', 3647), (u'experi', 3431), (u'work', 2763), (u'requir', 2528), (u'skill', 2201), (u'manag', 2109), (u'abil', 2020), (u'commun', 1637), (u'year', 1416), (u'servic', 1410), (u'provid', 1372), (u'custom', 1361), (u'program', 1347), (u'includ', 1272), (u'develop', 1206), (u'knowledg', 1119), (u'perform', 1077), (u'posit', 1064), (u'time', 1041), (u'health', 1013), (u'respons', 931), (u'need', 928), (u'maintain', 906), (u'plan', 899), (u'degre', 898), (u'prefer', 896), (u'train', 888), (u'employe', 863), (u'client', 852), (u'sale', 849), (u'job', 830), (u'team', 816), (u'assist', 812), (u'meet', 807), (u'product', 790), (u'excel', 789), (u'strong', 785), (u'inform', 785), (u'relat', 757), (u'busi', 716), (u'or', 704), (u'environ', 701), (u'duti', 701), (u'and', 689), (u'support', 668), (u'profession', 668), (u'student', 664), (u'nhc', 659), (u'applic', 653), (u'opportun', 644)]
+
+
+supervis
+[(u'work', 1676), (u'experi', 1259), (u'requir', 1185), (u'abil', 1175), (u'manag', 1089), (u'skill', 967), (u'supervis', 946), (u'perform', 733), (u'includ', 663), (u'commun', 657), (u'servic', 655), (u'year', 571), (u'provid', 564), (u'develop', 533), (u'respons', 520), (u'staff', 514), (u'custom', 508), (u'posit', 503), (u'knowledg', 500), (u'maintain', 498), (u'time', 482), (u'need', 478), (u'program', 472), (u'train', 469), (u'oper', 459), (u'plan', 456), (u'employe', 443), (u'product', 439), (u'job', 409), (u'assist', 398), (u'duti', 392), (u'schedul', 379), (u'health', 376), (u'ensur', 372), (u'offic', 369), (u'team', 359), (u'prefer', 354), (u'abl', 347), (u'meet', 347), (u'client', 342), (u'project', 341), (u'relat', 337), (u'excel', 336), (u'report', 330), (u'educ', 328), (u'care', 327), (u'or', 327), (u'use', 327), (u'and', 326), (u'assign', 323)]
+
+
+salary
+[(u'salari', 1336), (u'experi', 921), (u'requir', 763), (u'work', 755), (u'benefit', 608), (u'sale', 572), (u'manag', 560), (u'posit', 524), (u'skill', 520), (u'includ', 510), (u'pleas', 502), (u'resum', 501), (u'year', 446), (u'udollar', 408), (u'compani', 396), (u'competit', 388), (u'abil', 380), (u'opportun', 372), (u'servic', 354), (u'plan', 350), (u'provid', 346), (u'base', 346), (u'commun', 345), (u'offer', 329), (u'team', 326), (u'develop', 320), (u'insur', 317), (u'custom', 309), (u'excel', 288), (u'busi', 261), (u'time', 261), (u'paid', 261), (u'compens', 260), (u'plu', 259), (u'applic', 257), (u'health', 257), (u'employ', 254), (u'product', 253), (u'job', 251), (u'candid', 249), (u'environ', 248), (u'program', 245), (u'train', 244), (u'employe', 235), (u'perform', 234), (u'market', 232), (u'respons', 223), (u'medic', 218), (u'packag', 217), (u'appli', 216)]
+
+'degree'
+[(u'experi', 3517), (u'requir', 2082), (u'skill', 2013), (u'degre', 2001), (u'work', 1988), (u'abil', 1639), (u'year', 1568), (u'manag', 1339), (u'prefer', 1155), (u'commun', 1062), (u'excel', 990), (u'includ', 847), (u'knowledg', 838), (u'bachelor', 805), (u'develop', 792), (u'servic', 789), (u'relat', 774), (u'strong', 760), (u'educ', 695), (u'environ', 660), (u'posit', 654), (u'busi', 646), (u'sale', 611), (u'custom', 610), (u'team', 602), (u'project', 567), (u'applic', 567), (u'5', 551), (u'program', 542), (u'perform', 527), (u'comput', 521), (u'time', 515), (u'compani', 514), (u'job', 503), (u'system', 499), (u'benefit', 498), (u'offic', 495), (u'minimum', 493), (u'plan', 479), (u'high', 472), (u'account', 468), (u'provid', 465), (u'written', 465), (u'inform', 462), (u'opportun', 457), (u'pleas', 457), (u'2', 452), (u'field', 449), (u'plu', 446), (u'3', 441)]
+
+
+school
+[(u'experi', 607), (u'requir', 534), (u'work', 505), (u'abil', 488), (u'skill', 463), (u'high', 380), (u'diploma', 354), (u'school', 339), (u'year', 284), (u'prefer', 258), (u'servic', 236), (u'commun', 232), (u'custom', 218), (u'excel', 198), (u'perform', 193), (u'knowledg', 179), (u'educ', 175), (u'abl', 173), (u'manag', 170), (u'includ', 169), (u'job', 164), (u'environ', 159), (u'posit', 153), (u'employ', 146), (u'equival', 144), (u'offic', 132), (u'employe', 131), (u'ged', 128), (u'time', 127), (u'degre', 122), (u'train', 121), (u'oper', 119), (u'insur', 118), (u'strong', 117), (u'minimum', 115), (u'written', 112), (u'need', 112), (u'provid', 111), (u'comput', 111), (u'sale', 110), (u'equip', 109), (u'medic', 108), (u'benefit', 108), (u'use', 108), (u'licens', 108), (u'compani', 106), (u'qualif', 105), (u'2', 105), (u'3', 102), (u'duti', 102)]
+
+license
+[(u'experi', 131), (u'requir', 124), (u'work', 86), (u'degre', 85), (u'skill', 77), (u'year', 73), (u'master', 70), (u'abil', 52), (u'applic', 50), (u'manag', 47), (u'relat', 43), (u'prefer', 43), (u'posit', 43), (u'program', 43), (u'commun', 43), (u'knowledg', 35), (u'educ', 34), (u'includ', 33), (u'pleas', 33), (u'project', 32), (u'field', 32), (u'busi', 31), (u'strong', 31), (u'develop', 30), (u'servic', 29), (u'excel', 28), (u'health', 27), (u'appli', 27), (u'licens', 27), (u'system', 26), (u'opportun', 23), (u'comput', 23), (u'bachelor', 23), (u'softwar', 23), (u'social', 22), (u'well', 22), (u'benefit', 21), (u'candid', 21), (u'salari', 21), (u'certif', 21), (u'client', 20), (u'profession', 20), (u'support', 20), (u'design', 20), (u'base', 20), (u'job', 20), (u'5', 20), (u'offic', 19), (u'resum', 19), (u'desir', 19)]

@@ -1,21 +1,26 @@
 # -*- coding: utf-8 -*-
 import re,sys,os,time
 import numpy as np
+import xgboost
 from sklearn.naive_bayes import GaussianNB,MultinomialNB,BernoulliNB
 from sklearn.metrics import f1_score
+from sklearn.svm import SVC
 from sklearn.feature_extraction.text import CountVectorizer,HashingVectorizer,TfidfVectorizer
 from sklearn import svm,linear_model,ensemble
 from sklearn.multioutput import MultiOutputClassifier
 from collections import Counter
+import parsedatetime
 from nltk.stem.porter import *
 stemmer = PorterStemmer()
 
-#assigning predictor and target variables
+reload(sys)  
+sys.setdefaultencoding('utf8')
 
-stopwords = ['0', 'a', 'about', 'above', 'after', 'again', 'against', 'all', 'am', 'an', 'and', 'any', 'are', "aren't", 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', "can't", 'cannot', 'could', "couldn't", 'did', "didn't", 'do', 'does', "doesn't", 'doing', "don't", 'down', 'during', 'each', 'few', 'for', 'from', 'further', 'had', "hadn't", 'has', "hasn't", 'have', "haven't", 'having', 'he', "he'd", "he'll", "he's", 'her', 'here', "here's", 'hers', 'herself', 'him', 'himself', 'his', 'how', "how's", 'i', "i'd", "i'll", "i'm", "i've", 'if', 'in', 'into', 'is', "isn't", 'it', "it's", 'its', 'itself', "let's", 'me', 'more', 'most', "mustn't", 'my', 'myself', 'no', 'nor', 'not', 'of', 'off', 'on', 'once', 'only', 'or', 'other', 'ought', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 'same', "shan't", 'she', "she'd", "she'll", "she's", 'should', "shouldn't", 'so', 'some', 'such', 'than', 'that', "that's", 'the', 'their', 'theirs', 'them', 'themselves', 'then', 'there', "there's", 'these', 'they', "they'd", "they'll", "they're", "they've", 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 'very', 'was', "wasn't", 'we', "we'd", "we'll", "we're", "we've", 'were', "weren't", 'what', "what's", 'when', "when's", 'where', "where's", 'which', 'while', 'who', "who's", 'whom', 'why', "why's", 'with', "won't", 'would', "wouldn't", 'you', "you'd", "you'll", "you're", "you've", 'your', 'yours', 'yourself', 'yourselves'];
+#assigning predictor and target variables
+my_stopwords = ['0', 'a', 'about', 'above', 'after', 'again', 'against', 'all', 'am', 'an', 'and', 'any', 'are', "aren't", 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', "can't", 'cannot', 'could', "couldn't", 'did', "didn't", 'do', 'does', "doesn't", 'doing', "don't", 'down', 'during', 'each', 'few', 'for', 'from', 'further', 'had', "hadn't", 'has', "hasn't", 'have', "haven't", 'having', 'he', "he'd", "he'll", "he's", 'her', 'here', "here's", 'hers', 'herself', 'him', 'himself', 'his', 'how', "how's", 'i', "i'd", "i'll", "i'm", "i've", 'if', 'in', 'into', 'is', "isn't", 'it', "it's", 'its', 'itself', "let's", 'me', 'more', 'most','must', "mustn't", 'my', 'myself', 'no', 'nor', 'not', 'of', 'off', 'on', 'once', 'only', 'or', 'other', 'ought', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 'same', "shan't", 'she', "she'd", "she'll", "she's", 'should', "shouldn't", 'so', 'some', 'such', 'than', 'that', "that's", 'the', 'their', 'theirs', 'them', 'themselves', 'then', 'there', "there's", 'these', 'they', "they'd", "they'll", "they're", "they've", 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 'very', 'was', "wasn't", 'we', "we'd", "we'll", "we're", "we've", 'were', "weren't", 'what', "what's", 'when', "when's", 'where', "where's", 'which', 'while', 'who', "who's", 'whom', 'why', "why's", 'with', "won't", 'would', "wouldn't", 'you', "you'd", "you'll", "you're", "you've", 'your', 'yours', 'yourself', 'yourselves'];
 
 #start process_tweet
-logfile = open('dump.txt','a')
+logfile = open('dump.txt','w')
 
 numbers = ['one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen']
 
@@ -28,6 +33,7 @@ NEGATE = ["aint", "arent", "cannot", "cant", "couldnt", "darent", "didnt", "does
               "oughtn't", "shan't", "shouldn't", "uh-uh", "wasn't", "weren't",
               "without", "wont", "wouldnt", "won't", "wouldn't", "rarely", "seldom", "despite"]
 
+
 all_tags = ['part-time-job','full-time-job','hourly-wage','salary','associate-needed','bs-degree-needed','ms-or-phd-needed',
   'licence-needed','1-year-experience-needed','2-4-years-experience-needed','5-plus-years-experience-needed','supervising-job']
 all_tags_map = {'part-time-job':0,'full-time-job':0,'hourly-wage':1,'salary':1,'associate-needed':2,'bs-degree-needed':2,'ms-or-phd-needed':2,
@@ -36,17 +42,31 @@ n_tags = 12
 
 def normalize_text(desc):
   #  Remove ascii characters
-  desc = desc.replace('/', ' per ')
-  desc = desc.replace('$', ' DOLLAR ')
+  desc = desc.lower()
+  desc = re.sub('(per|/|a)[ ]*(week|day|hour|hr|month)', ' uperiod ',desc)
+  desc = re.sub('/', ' or ',desc)
+  desc = re.sub('full[ -]time','ufull',desc)
+  desc = re.sub('permanent (position|job|contract)',' ufull ',desc)
+  desc = re.sub('temporary (position|job|contract)',' upart ',desc)
+  desc = re.sub('part[ -]time','upart',desc)
+  desc = re.sub('([ ]+(ph|m)[\. ]?d[ .]+|[ ]+post[ ]*doc)',' uphd ',desc)
+  desc = re.sub('([ ]+m[\. ]?[sac][\. ]+|master[s\' ]+)', ' umaster ',desc)
+  desc = re.sub('ms[ ]*(word|excel|powerpoint|access|outlook|project|onenote)', ' office ',desc)
+  desc = re.sub('([ ]+b[\. ]?[sac][\. ]+|bachelor[s\' ]+)', ' ubachelor ', desc)
+  desc = re.sub('(high school diploma|diploma|ged|general dducational development)', ' udiploma ', desc)
+  desc = re.sub('(associate[ s]*degree)', ' uassociate ', desc)
+  desc = re.sub('(permit[s ]+|licence)', ' ulicence ', desc)
+  desc = desc.replace('$', ' udollar ')
   desc = ''.join([i.lower() if ord(i) < 128 else ' ' for i in desc.decode('utf-8')])
-  desc = re.sub(r'((https?://[^\s]+)|(www\.[^\s]+))','LINK',desc)
-  # 
-  desc = re.findall(r"[\w']+", desc)
+  desc = re.sub(r'((https?://[^\s]+)|(www\.[^\s]+))','ulink',desc)
+  # desc = re.findall(r"[\w']+", desc)
+
+  from nltk import word_tokenize
+  from nltk.corpus import stopwords
+  import string
+  stops = stopwords.words('english') + list(string.punctuation) + my_stopwords
+  desc = [i for i in word_tokenize(desc) if i not in stops]
   desc = ' '.join( map( stemmer.stem ,desc) )
-  # print(desc)
-  # exit(0)
-  
-  print >> logfile,  desc
   return desc
 
 def score(labels,test_labels,use_list=[1]*n_tags):
@@ -68,10 +88,9 @@ def score(labels,test_labels,use_list=[1]*n_tags):
         sfp+=1
       else:
         stn+=1
-  print(stp,sfp,sfn,stn)
-  p,r=stp*1.0/(stp+sfp),stp*1.0/(stp+sfn)
-  print('precision',p,'recall',r)
-  return 2*p*r/(p+r)
+  p,r=stp*1.0/max(stp+sfp,1),stp*1.0/max(stp+sfn,1)
+  print(stp,sfp,sfn,stn,'precision',p,'recall',r)
+  return 2*p*r/max(p+r,0.0001)
 
 #########################################################################################################
 # LOGISTIC REGRESSION
@@ -166,7 +185,7 @@ def text_extract(desc,labels):
   for i,x in enumerate(desc):
     # exp = find_experience(x,6)
     # test_labels[i].append(exp)
-    if find_job_timings(x,4,['per','hour'],['dollar','wage','earn','week','day','hr'],2):
+    if find_job_timings(x,4,['per','hour'],['udollar','wage','earn','week','day','hr'],2):
       test_labels[i].append(all_tags[2])
     elif find_job_timings(x,6,['per','year','annum'],['salary','earn','dollar'],1):
       test_labels[i].append(all_tags[3])
@@ -238,8 +257,8 @@ def isTimeFormat(input):
 def feature_experience(desc,sr):
   ld = len(desc)
   # print(desc)
-  key_words = ['experience'] #['experience','year']
-  semi = ['year','minimum','work']
+  key_words = map( stemmer.stem , ['experience']) #['experience','year']
+  semi = map( stemmer.stem, ['year','minim','work'])
   values = []
   confidence = 0
   desc = re.findall(r"[\w']+", desc)
@@ -263,98 +282,203 @@ def feature_experience(desc,sr):
     #  mode, largest, smallest
   return [0,0,0]
 
+def conrt(zz):
+  # print( zz[27+zz[27:].index('[')+1:zz.index(']')] )
+  return (zz[:27],map(float,zz[27+zz[27:].index('[')+1:zz.index(']')].split(',') ))
+
+feats ={ x[0]:x[1] for x in map( conrt , open("tmp/feats.tmp", "r").readlines())}
+
 def extract_features(text):
 
-  feature_vec = []
-  text = text.lower()
-  desc = list(map(lambda xx: xx.strip(' .,?!*'),text.split()))
-  ld = len(desc)
+  def actual_work(text):
+    feature_vec = []
+    text = text.lower()
+    desc = list(map(lambda xx: xx.strip(' .,?!*'),re.split('[ \.,\?!\*-]', text)))
+    ld = len(desc)
 
-  # currency terms
-  currency_features = [0,30*1000,50*1000]
-  currency = re.findall( r'[\$]?[ ]*[0-9,.]+k?[\$]?' ,text)
-  for j,xx in enumerate(currency):
-    xx = re.sub('[,$]', '', xx)
-    xx = re.sub('[k]', '000', xx)
-    xx = re.sub('[ ]', '', xx)
-    currency[j] = int(xx)
-  currency=sorted(filter(lambda yy: yy>=5 and yy<10**5,currency) )
-  if len(currency)>0:
-    currency_features[-1]=currency[-1]
-    currency_features[0]=currency[0]
-    currency_features[1]=sum(currency)*1.0/len(currency)
-  # feature_vec.append(currency_features)
+    # currency terms
+    currency_features = [0,30*1000,50*1000]
+    currency = re.findall( r'[\$][ ]*[0-9,.]+[km]?' ,text)+re.findall( r'[0-9,.]*[0-9]+[km]?[ ]*[\$]' ,text)
+    for j,xx in enumerate(currency):
+      # print('xx',xx)
+      xx = re.sub('[,$. ]', '', xx)
+      xx = re.sub('[m]', 'kk', xx)
+      xx = re.sub('[k]', '000', xx)
+      currency[j] = float(xx) if xx!='' else 0
+    # print >> logfile, currency
+    currency=sorted(filter(lambda yy: yy>3 and yy<2*10**5,currency) )
+    if len(currency)>0:
+      currency_features[-1]=currency[-1]
+      currency_features[0]=currency[0]
+      currency_features[1]=sum(currency)*1.0/len(currency)
+    feature_vec+=currency_features
 
-  # Datetime 
-  def interval():
-    import parsedatetime
-    p = parsedatetime.Calendar()
-    max_hr,min_hr=0,24
-    for i,xx in enumerate(desc):
-      if(isTimeFormat(xx) or p.parse(xx)[1]>=1):
-        s=''.join(desc[max(0,i-1):min(i+2,ld)])
-        tm, status = p.parse(s)
+    # Datetime 
+    def interval():
+      p = parsedatetime.Calendar()
+      max_hr,min_hr=0,24
+      for i,xx in enumerate(desc):
+        tm, status = p.parse(xx)
+        if(isTimeFormat(xx) or status>=2):
+          s=' '.join(desc[max(0,i-1):min(i+2,ld)])
+          print('s',s,status,tm.tm_hour,min_hr,max_hr)
+          if tm.tm_hour<min_hr:
+            min_hr = tm.tm_hour
+          if tm.tm_hour>max_hr:
+            max_hr = tm.tm_hour
+      if min_hr>max_hr:
+        print >> logfile, 0
+        return 0
+      else:
+        print >> logfile, max_hr - min_hr
+        return max_hr - min_hr
+    def soft_iterval(): 
+      p = parsedatetime.Calendar()
+      bb=re.findall( '[ ]+[0-9]+[:0-9]*[ \.]*[ap][\. ]?[m][\. ]+' , text)
+      max_hr,min_hr=0,24
+      for b in bb:
+        tm, status = p.parse(b)
+        print('b[0]',b,status,tm.tm_hour,min_hr,max_hr)
         if status>=2:
           if tm.tm_hour<min_hr:
             min_hr = tm.tm_hour
-          elif tm.tm_hour>max_hr:
+          if tm.tm_hour>max_hr:
             max_hr = tm.tm_hour
-    if min_hr>max_hr:
-      return 8
+      return max(0,max_hr - min_hr)
+    # feature_vec.append(interval())
+    feature_vec.append(soft_iterval())
+
+    if find_job_timings(text,4,map( stemmer.stem,['uperiod','per','hour']),map( stemmer.stem,['udollar','wage','earn','week','day','hr']),2):
+      feature_vec.append(1)
     else:
-      return max_hr - min_hr
-  feature_vec.append(interval())
+      feature_vec.append(0)
 
-  if find_job_timings(text,4,['per','hour'],['dollar','wage','earn','week','day','hr'],2):
-    feature_vec.append(1)
+    if find_job_timings(text,6,map( stemmer.stem,['per','year','annum']),map( stemmer.stem,['salary','earn','udollar']),1):
+      feature_vec.append(1)
+    else:
+      feature_vec.append(0)
+
+    feature_vec+=feature_experience(text,6)
+    
+    # extract normalized features
+    text = normalize_text(text)
+    jd_dict = ['salary','wage', 'udollar','uperiod','ufull', 'upart', 'umaster','ubachelor','graduate','udiploma','uphd','insurance'
+    'uassociate','ulicence','certificate','education','supervise','sale','compensation','package','permanent','temporary','medical',
+    'equipment','health','']
+    jd_dict = map( stemmer.stem, jd_dict)
+    for xx in jd_dict:
+      feature_vec.append(text.count(xx))
+    # print >> logfile,  feature_vec
+    return feature_vec
+
+  if str(text[:27]) in feats:
+    return feats[str(text[:27])]
   else:
-    feature_vec.append(0)
+    feats[str(text[:27])] = actual_work(text)
+    return feats[str(text[:27])]
 
-  if find_job_timings(text,6,['per','year','annum'],['salary','earn','dollar'],1):
-    feature_vec.append(1)
-  else:
-    feature_vec.append(0)
-
-
-  # extract normalized features
+def extra_features(text,word):
   text = normalize_text(text)
-  jd_dict = map( stemmer.stem, ['salary','wage', 'full', 'part', 'master','bachelor','bs','ms','phd','associate','licence','education','experience','hour','plus',
-                  'supervise','manage','lead','mentor','moniter','pay'])
-  for xx in jd_dict:
-    feature_vec.append(text.count(xx))
-  feature_vec+=feature_experience(text,5)
-  print(len(feature_vec))
-  return feature_vec
+  word = stemmer.stem(word)
+  return text.count(word)
 
+model_svc = [None for i in range(5)]
+model_svc[0]=SVC(C=1000000.0, kernel='rbf')
+model_svc[1]=SVC(C=1000000.0, kernel='rbf')
+model_svc[2]=SVC(C=1000000.0, kernel='rbf')
+model_svc[3]=SVC(C=1000000.0, kernel='rbf')
+model_svc[4]=SVC(C=1000000.0, kernel='rbf')
+
+model_vec = [None for i in range(5)]
+model_vec[0]=xgboost.XGBClassifier(max_depth=4,n_estimators=200,seed=27,subsample=0.8,colsample_bytree=0.8)
+model_vec[1]=xgboost.XGBClassifier(max_depth=4,n_estimators=200,seed=27,subsample=0.85,colsample_bytree=0.82)
+model_vec[2]=xgboost.XGBClassifier(max_depth=4,n_estimators=200,seed=27,subsample=0.8,colsample_bytree=0.8)
+model_vec[3]=xgboost.XGBClassifier(max_depth=4,n_estimators=200,seed=27,subsample=0.8,colsample_bytree=0.8)
+model_vec[4]=xgboost.XGBClassifier(max_depth=4,n_estimators=200,seed=27,subsample=0.8,colsample_bytree=0.8)
+
+specific_words = [None for i in range(5)]
+specific_words[0]=[]
+specific_words[1]=['competitive']
+specific_words[2]=[] #svc
+specific_words[3]=['benefits','pay','skill','senior']
+specific_words[4]=['manage','experience','lead','mentor','moniter','skill'] # svc
+
+train_normalized = []
+test_normalized = []
+
+def learn_single(desc,labels,test_desc,test_labels,typ='xgb',model_no=4):
+  train_vectors, test_vectors = [],[]
+  model = None
+  if typ=='svc':
+    # desc = np.array( map( lambda x: normalize_text(x), desc) )
+    # test_desc= np.array(map( lambda x: normalize_text(x), test_desc))
+    print('lens',len(train_normalized),len(test_normalized),len(desc),len(test_desc))
+    vectorizer = TfidfVectorizer(ngram_range=(1,2),use_idf=True,stop_words=u'english') #stop_words=stopwords)
+
+    train_vectors = vectorizer.fit_transform(train_normalized)
+    test_vectors = vectorizer.transform(test_normalized)
+
+    model = model_svc[model_no]
+  elif typ=='xgb':
+    for ii,x in enumerate(desc):
+      ft = extract_features(x)+ map( lambda zz: extra_features(x,zz), specific_words[model_no])
+      train_vectors.append( ft )
+    for ii,x in enumerate(test_desc):
+      ft = extract_features(x) + map( lambda zz: extra_features(x,zz), specific_words[model_no])
+      test_vectors.append( ft )
+    with open('tmp/feats.tmp', 'w') as f:
+      f.write( '\n'.join( xx + '\t'+ str(feats[xx]) for xx in feats) )
+    train_vectors = np.array(train_vectors)
+    test_vectors = np.array(test_vectors)
+    model = model_vec[model_no] 
+  else:
+    print('Error',typ)
+    exit(0)
+
+  model.fit(train_vectors, labels)
+  Z = model.predict(test_vectors)
+  return Z
 
 def learn_simple(desc,labels,test_desc,test_labels):
-  desc = list( map( lambda x: normalize_text(x), desc) )
-  test_desc= list(map( lambda x: normalize_text(x), test_desc))
+  # desc = list( map( lambda x: normalize_text(x), desc) )
+  # test_desc= list(map( lambda x: normalize_text(x), test_desc))
+  print('len desc',len(desc))
 
-  train_vectors, test_vectors = [], []
-  for x in desc:
-    train_vectors.append( extract_features(x) )
-  for x in test_desc:
-    test_vectors.append( extract_features(x) )
-  logreg = linear_model.LogisticRegression()
-  multi_target_clf = MultiOutputClassifier(logreg, n_jobs=-1)
-  multi_target_clf.fit(train_vectors, labels)
+  ff= lambda l1,l2: [[0]*l2 for xx in range(l1)]
+
+  global test_normalized,train_normalized
+  train_normalized = np.array(map( lambda x: normalize_text(x), desc)) 
+  test_normalized = np.array( map( lambda x: normalize_text(x), test_desc) )
+
+  Z = ff(len(test_desc),5)
+  zz = ff(5,len(test_desc))
+  zz[0] = learn_single(desc,map(lambda w:w[0],labels),test_desc,map(lambda w:w[0],test_labels), typ='xgb',model_no=0)
+  zz[1] = learn_single(desc,map(lambda w:w[1],labels),test_desc,map(lambda w:w[1],test_labels), typ='xgb',model_no=1)
+  zz[2] = learn_single(desc,map(lambda w:w[2],labels),test_desc,map(lambda w:w[2],test_labels), typ='svc',model_no=2)
+  zz[3] = learn_single(desc,map(lambda w:w[3],labels),test_desc,map(lambda w:w[3],test_labels), typ='xgb',model_no=3)
+  zz[4] = learn_single(desc,map(lambda w:w[4],labels),test_desc,map(lambda w:w[4],test_labels), typ='svc',model_no=4)
+
+  for i,yy in enumerate(Z):
+    for z in range(5):
+      Z[i][z]= zz[z][i]
 
   if len(test_labels)!=0:
-    print('AccuracyLogRegression',multi_target_clf.score(test_vectors,test_labels))
-    Z = multi_target_clf.predict(test_vectors)
-    print('f1_score',f1_score( map(lambda x:x[-1],test_labels) , map(lambda x:x[-1],Z), average='macro' ) )
-    use_list = [0]*n_tags
-    use_list[8]=use_list[9]=use_list[10]=1
-    print('f1_score2',score( map(get_text_labels,test_labels) , map(get_text_labels,Z) ) )
-    print( list(map(lambda x:x[-1],test_labels)) , list(map(lambda x:x[-1],Z)) )
+    # print('AccuracyLogRegression',multi_target_clf.score(test_vectors,test_labels))
 
-  else:
-    test_labels = multi_target_clf.predict(test_vectors)
-  return test_labels
+    # print('f1_score',f1_score( map(lambda x:x[-1],test_labels) , map(lambda x:x[-1],Z), average='macro' ) )
+    # use_list = [0]*n_tags
+    # use_list[8]=use_list[9]=use_list[10]=1
+    # use_list[11]=1
+    print('f1_score2',score( map(get_text_labels,test_labels) , map(get_text_labels,Z), [1,1,0,0,0,0,0,0,0,0,0,0] ) )
+    print('f1_score2',score( map(get_text_labels,test_labels) , map(get_text_labels,Z), [0,0,1,1,0,0,0,0,0,0,0,0] ) )
+    print('f1_score2',score( map(get_text_labels,test_labels) , map(get_text_labels,Z), [0,0,0,0,1,1,1,1,0,0,0,0] ) )
+    print('f1_score2',score( map(get_text_labels,test_labels) , map(get_text_labels,Z), [0,0,0,0,0,0,0,0,1,1,1,0] ) )
+    print('f1_score2',score( map(get_text_labels,test_labels) , map(get_text_labels,Z), [0,0,0,0,0,0,0,0,0,0,0,1] ) )
+    print('f1_score2',score( map(get_text_labels,test_labels) , map(get_text_labels,Z), [1,1,1,1,1,1,1,1,1,1,1,1] ) )
 
+  return Z
 
-##############################################################################################################################
+###################################################################################################################################
 
 
 def prepare_manual(test_lines,train_lines):
